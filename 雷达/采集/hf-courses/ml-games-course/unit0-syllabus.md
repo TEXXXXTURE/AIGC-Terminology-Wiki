@@ -1,0 +1,38 @@
+# 来源: https://huggingface.co/learn/ml-games-course/unit0/syllabus.md
+
+# The Course Syllabus
+
+The course is now **self-paced and will not have new future units**. We **don't provide a Certificate of Completion for this course**.
+But we continue to write tutorials on how to use AI in Games here 👉 https://thomassimonini.substack.com/
+
+## What the course looks like
+
+The course is composed of:
+
+- *A theory part*: where you learn the **concepts in theory**.
+- *A hands-on part*: where you'll work on demos we created to implement the AI.
+- Your demo: you'll build this during the course!
+
+## What this course covers 🗺️
+
+This course will cover:
+
+- How to use **AI models in your games**.
+- How to use AI models with the **free Hugging Face Inference API**.
+- How to use **AI models in Unity with Sentis**.
+- A list of amazing **AI tools to help you create voices, sounds, music, textures, and assets**.
+
+## What this course does not cover
+
+This course **is not an introduction to game development**. You should have some skills in Unity or Unreal to follow this course effectively.
+
+This course **is not an introduction to Machine Learning or AI**. You may find this course helpful if you're interested in the concepts behind language processing with ML: [Natural Language Processing with Transformers](https://huggingface.co/learn/nlp-course).
+
+## Recommended Pace
+
+Each unit in this course is designed to be completed **in 1 week**, with approximately 3-4 hours of work per week. 
+
+However, you can take as much time as necessary to complete the course, **there are no deadlines**. If you want to dive deeper into a topic, we'll provide additional resources to help you achieve that.
+
+The recommended pace is **to work on one unit per week**. For the demo you need to make, we recommend **to work from two weeks to one month maximum**.
+
