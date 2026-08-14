@@ -46,7 +46,7 @@
 
 /* ---------- 标题渐变字 ---------- */
 [data-md-color-scheme="slate"] .md-content__inner h1 {
-  background: linear-gradient(120deg, #b388ff 0%, #18ffff 100%);
+  background: linear-gradient(120deg, #b388ff 0%, #18ffff 50%, #ff9d0b 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -54,12 +54,19 @@
   letter-spacing: 0.5px;
 }
 
+/* 词条页 h2：HF 橙点缀线 */
 [data-md-color-scheme="slate"] .md-content__inner h2 {
-  border-bottom: 1px solid rgba(179, 136, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 157, 11, 0.25);
   padding-bottom: 0.3em;
 }
 
-/* ---------- 链接 ---------- */
+[data-md-color-scheme="slate"] .md-content__inner h2::before {
+  content: "◆ ";
+  color: #ff9d0b;
+  font-size: 0.7em;
+}
+
+/* ---------- 链接：HF 橙 hover ---------- */
 [data-md-color-scheme="slate"] .md-content__inner a {
   color: #82cfff;
   text-decoration: none;
@@ -68,8 +75,8 @@
 }
 
 [data-md-color-scheme="slate"] .md-content__inner a:hover {
-  color: #18ffff;
-  border-bottom-color: #18ffff;
+  color: #ff9d0b;
+  border-bottom-color: #ff9d0b;
 }
 
 /* ---------- 代码块：玻璃卡片 ---------- */
