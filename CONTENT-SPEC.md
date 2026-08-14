@@ -41,16 +41,17 @@ status: published                   # 状态: draft / review / published
 contributors: []                    # 贡献者（GitHub 用户名）
 sources:                            # 来源链接（强制，无源不收录）
   - https://arxiv.org/abs/2106.09685
-relations:                          # 关系（核心！写词条必须同时声明关系）
-  - type: prerequisite              # 前置依赖
-    target: 微调
-    note: LoRA 是微调的一种实现方式
-  - type: contrast                  # 对比
-    target: 全量微调
-    note: 只调少量参数 vs 动全部权重
-  - type: evolved_from              # 演进自
-    target: Adapter
-    note: 解决了 Adapter 的推理延迟
+relations:                          # 关系（核心！语义接近即链接）
+  - target: 微调
+    note: LoRA 是微调的一种实现，语义紧邻
+  - target: 全量微调
+    note: 常拿来对比的另一个微调方案
+  - target: PEFT
+    note: 同属参数高效微调家族
+  # type 可选：想标注关系类型（prerequisite/contrast/peer/...）就写，不强制
+  # - type: contrast
+  #   target: xxx
+  #   note: xxx
 created: 2026-08-14
 updated: 2026-08-14
 revisions: 1                        # 修订次数
@@ -96,23 +97,28 @@ revisions: 1                        # 修订次数
 
 ---
 
-## 二、关系类型（v1，7 种）
+## 二、关系（v1：语义接近即链接）
 
-`relations[].type` 必须从下表选择。关系是词条的灵魂——**写词条必须同时声明关系，写一个连一个**。
+关系是词条的灵魂——**写词条必须同时声明关系，写一个连一个**。但不需要精确定义关系类型：
 
-| 类型 | 含义 | 方向 | 例子 |
-|------|------|------|------|
-| `prerequisite` | 前置依赖，先学它 | → | 扩散模型 → 去噪 |
-| `part_of` | 属于某个家族/系统 | → | UNet ∈ 扩散模型 |
-| `peer` | 同层平行（同 dimension+granularity） | ↔ | MiniMax ↔ 阿里 |
-| `contrast` | 对比关系，区别在哪 | ↔ | bf16 vs fp32 |
-| `evolved_from` | 演进/替代 | ← | int8 ← 蒸馏量化 |
-| `applies_to` | 应用于 | → | LoRA → 风格模型 |
-| `similar_to` | 相似但不同 | ↔ | GGUF vs safetensors |
+- **必填**：`target`（指向哪个词条）+ `note`（一句话说明为什么接近——这是给读者看的，也是将来机器学习路径的原料）
+- **可选**：`type` 想标注就标注（见下方类型参考），不标不校验。关系模糊是常态，LoRA 和微调既是前置又是包含，硬分类反而失真
+- **本质**：`relations` 就是"语义接近度"的显式声明——两个概念在向量空间里靠得近，就在代码里连一条边。机器将来可按被引用密度 / note 语义自动补链
+
+**类型参考（可选标注，不强制）**：
+
+| 类型 | 含义 | 例子 |
+|------|------|------|
+| `prerequisite` | 前置依赖 | 扩散模型 → 去噪 |
+| `part_of` | 属于某个家族 | UNet ∈ 扩散模型 |
+| `peer` | 同层平行 | MiniMax ↔ 阿里 |
+| `contrast` | 对比 | bf16 vs fp32 |
+| `evolved_from` | 演进 | int8 ← 蒸馏量化 |
+| `applies_to` | 应用于 | LoRA → 风格模型 |
+| `similar_to` | 相似但不同 | GGUF vs safetensors |
 
 **规则**：
-- `peer` 的两端必须 `dimension` 和 `granularity` 都相同
-- `prerequisite` 链 = 学习路径；`contrast` 链 = 选择决策；`evolved_from` 链 = 历史脉络
+- `peer` 若标注，两端应 `dimension` + `granularity` 相同
 - 一个词条没有 `relations` = 孤岛，不合格（要么没写全，要么概念过气该删）
 
 ---
@@ -160,12 +166,13 @@ Schema 校验由 CI 自动执行，缺失即打回。提交词条前请对照以
 - [ ] 「由来与历史」区非空（至少 1 段）
 - [ ] `sources` 至少 1 条有效 URL（可点击、可验证，死链打回）
 - [ ] `relations` 至少 1 条（无关系 = 孤岛 = 打回）
+- [ ] `relations[].target` 已填（指向存在的词条或待创建清单）
+- [ ] `relations[].note` 已填（一句话说明为什么接近）
 
 **格式与一致性**
 - [ ] `maturity: hot` 的词条，定义区顶部已标注「🟡 社区热词，未经沉淀，信息可能快速过时」
-- [ ] `relations[].type` 属于 7 种类型之一
-- [ ] `peer` 关系的两端 `dimension` + `granularity` 相同
-- [ ] `relations[].target` 真实存在，或已列入待创建清单
+- [ ] 若标注了 `relations[].type`，属于参考类型之一（不标不校验）
+- [ ] 若标注了 `peer` 类型，两端 `dimension` + `granularity` 相同
 - [ ] 文件名无特殊字符（空格、`/`、`:`、`?` 等不允许）
 - [ ] `created` / `updated` 为 `YYYY-MM-DD` 格式
 
