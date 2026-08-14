@@ -12,15 +12,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: deep purple
-      accent: cyan
+      primary: orange
+      accent: pink
       toggle:
         icon: material/weather-night
         name: 切换到亮色
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: deep purple
-      accent: cyan
+      primary: orange
+      accent: pink
       toggle:
         icon: material/weather-sunny
         name: 切换到暗色
