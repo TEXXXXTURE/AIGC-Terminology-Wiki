@@ -1,0 +1,10 @@
+# MkDocs 构建产物（由 GitHub Actions 生成，不提交）
+site/
+
+# Python
+__pycache__/
+*.pyc
+
+# 系统
+.DS_Store
+Thumbs.db

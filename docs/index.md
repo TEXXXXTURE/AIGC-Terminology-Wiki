@@ -1,46 +1,69 @@
-# AIGC 术语知识库 — 分类索引
+---
+title: AIGC 术语知识库
+---
 
-欢迎来到 AIGC 术语知识库——**「一线知识的沉淀与导航站」**。用大白话讲清楚 AI 圈子里的新词，点击词条名跳转到独立页面。
-
-## 双层结构
-
-- **概念库（沉淀层）**：你在这里。稳定、可信的词条，互相链接。词条按成熟度分两级：🟢 已沉淀（完整定义 + 多源交叉验证）/ 🟡 社区热词（未经沉淀，信息可能快速过时）。
-- **前沿雷达（未沉淀区）**：机器自动扫描 GitHub / arXiv / 社区讨论生成的新词线索，只做记录，见 `雷达/` 目录。热词经审校后才升级为正式词条。
-
-想贡献词条或纠错，见 [CONTRIBUTING.md](../CONTRIBUTING.md)；内容标准见 [CONTENT-SPEC.md](../CONTENT-SPEC.md)。
+<div class="hero">
+  <h1>AIGC 术语知识库</h1>
+  <div class="subtitle">一线知识的沉淀与导航站 — 开源、Wiki 式、面向大众的 AIGC 术语库</div>
+  <div class="pillars">
+    <span class="pillar">🔼 上限靠来源</span>
+    <span class="pillar">✅ 标准靠校验</span>
+    <span class="pillar">🌱 生态靠开放</span>
+    <span class="pillar">🔗 信任靠留痕</span>
+  </div>
+</div>
 
 ---
 
-## 模型微调
+## 🌳 知识树
 
-参数高效的微调技术——不动整个大模型，只调一小块参数达到定制效果。
+每个词条是一个节点，关系是边。从根往下读是一条完整的学习路径，从叶子跳入是速查。
 
-- 🟢 [LoRA](词条/LoRA.md)（Low-Rank Adaptation，低秩适配）
+```mermaid
+mindmap
+  root((AIGC 知识树))
+    底层原理
+      神经网络
+      浮点数与精度
+      生成模型
+      扩散模型
+      训练与微调
+      量化
+    组件
+      UNet
+      VAE
+      CLIP
+      文本编码器
+      潜空间
+      采样器
+    表层概念
+      量化格式
+        bf16
+        int8
+        GGUF
+      微调
+        LoRA
+```
 
-## 多模态
+## 📚 词条导航
 
-文 / 图 / 音 / 视频的生成与理解技术。
+- [底层原理 →](词条/01-底层原理/神经网络.md) — 理解一切的根
+- [组件 →](词条/02-组件/UNet.md) — 模型的零件
+- [表层概念 →](词条/03-表层概念/) — 具体技术/格式/参数
 
-- 🟢 [VAE](词条/VAE.md)（Variational Autoencoder，变分自编码器）
+## 🟡 前沿雷达
 
-## 训练
+机器自动扫描社区（GitHub / arXiv / 讨论）生成的热词卡，未经沉淀、先看先得。见 `雷达/` 目录。
 
-模型的训练方法与范式。
+## 📖 项目文档
 
-- 🟢 [蒸馏](词条/蒸馏.md)（Knowledge Distillation，知识蒸馏）
+| 文档 | 是什么 |
+|------|--------|
+| [内容规范](项目文档/CONTENT-SPEC.md) | 词条长什么样、怎么写、怎么连线、怎么校验 |
+| [贡献指南](项目文档/CONTRIBUTING.md) | 四层贡献模型：读者 / 贡献者 / 维护者 / 机器 |
+| [维护流程](项目文档/MAINTENANCE.md) | 审校 / 发布 / 雷达 / 升降级 / 回滚 |
+| [设计定案](项目文档/DESIGN-SPEC.md) | 项目设计决策的唯一事实源 |
 
-## 推理
+## ✍️ 贡献
 
-模型的运行与优化——让它在你手头的机器上跑起来、跑得快。
-
-- 🟢 [GGUF](词条/GGUF.md)（GPT-Generated Unified Format）
-
-## 架构
-
-网络结构与模块设计。
-
-- 🟢 [MoE](词条/MoE.md)（Mixture of Experts，混合专家）
-
----
-
-> 分类体系共 11 类（模型 / 架构 / 训练 / 推理 / 模型微调 / 工具 / 平台 / 对齐 / 上下文工程 / 多模态 / Agent），详见 CONTENT-SPEC.md 第五节。当前为示例词条，持续扩充中。
+欢迎任何人参与！提 Issue 纠错、提 PR 写词条。仓库：[TEXXXXTURE/AIGC-Terminology-Wiki](https://github.com/TEXXXXTURE/AIGC-Terminology-Wiki)

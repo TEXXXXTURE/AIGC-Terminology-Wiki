@@ -1,0 +1,174 @@
+/* ============================================
+   AIGC 术语知识库 — 深色星空主题
+   设计语言：深邃星辰暗色 + 玻璃态 + 微噪点
+   ============================================ */
+
+/* ---------- 全局：星空渐变背景（非死黑） ---------- */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: transparent;
+}
+
+[data-md-color-scheme="slate"] .md-main {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(124, 77, 255, 0.12), transparent 60%),
+    radial-gradient(ellipse 60% 40% at 90% 110%, rgba(0, 188, 212, 0.08), transparent 60%),
+    radial-gradient(ellipse 50% 35% at 10% 100%, rgba(156, 39, 176, 0.06), transparent 60%),
+    linear-gradient(180deg, #0d0b1a 0%, #131022 50%, #0d0b1a 100%);
+  background-attachment: fixed;
+}
+
+/* 微噪点：全站叠加一层极淡的噪点纹理 */
+[data-md-color-scheme="slate"] .md-main::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  z-index: 0;
+}
+
+[data-md-color-scheme="slate"] .md-main .md-content,
+[data-md-color-scheme="slate"] .md-main .md-sidebar {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- 玻璃态卡片：内容区 ---------- */
+[data-md-color-scheme="slate"] .md-content__inner {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  padding: 1.2rem 1.8rem;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+/* ---------- 标题渐变字 ---------- */
+[data-md-color-scheme="slate"] .md-content__inner h1 {
+  background: linear-gradient(120deg, #b388ff 0%, #18ffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+[data-md-color-scheme="slate"] .md-content__inner h2 {
+  border-bottom: 1px solid rgba(179, 136, 255, 0.15);
+  padding-bottom: 0.3em;
+}
+
+/* ---------- 链接 ---------- */
+[data-md-color-scheme="slate"] .md-content__inner a {
+  color: #82cfff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(130, 207, 255, 0.3);
+  transition: all 0.2s;
+}
+
+[data-md-color-scheme="slate"] .md-content__inner a:hover {
+  color: #18ffff;
+  border-bottom-color: #18ffff;
+}
+
+/* ---------- 代码块：玻璃卡片 ---------- */
+[data-md-color-scheme="slate"] .md-content__inner pre,
+[data-md-color-scheme="slate"] .md-content__inner code.highlight {
+  background: rgba(10, 8, 25, 0.7) !important;
+  border: 1px solid rgba(179, 136, 255, 0.12);
+  border-radius: 10px;
+}
+
+/* ---------- 导航栏：毛玻璃 ---------- */
+[data-md-color-scheme="slate"] .md-header {
+  background: rgba(13, 11, 26, 0.75) !important;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(179, 136, 255, 0.08);
+}
+
+/* ---------- 词条成熟度标记（代码层不渲染，这里是给手动标注用的） ---------- */
+.hot-badge {
+  display: inline-block;
+  background: rgba(255, 193, 7, 0.15);
+  color: #ffd54f;
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  border-radius: 20px;
+  padding: 2px 12px;
+  font-size: 0.75rem;
+  vertical-align: middle;
+}
+
+/* ---------- 亮色模式微调 ---------- */
+[data-md-color-scheme="default"] .md-content__inner {
+  background: rgba(0, 0, 0, 0.015);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  padding: 1.2rem 1.8rem;
+}
+
+[data-md-color-scheme="default"] .md-content__inner h1 {
+  background: linear-gradient(120deg, #6200ea 0%, #0097a7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ---------- 滚动条 ---------- */
+[data-md-color-scheme="slate"] ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+[data-md-color-scheme="slate"] ::-webkit-scrollbar-thumb {
+  background: rgba(179, 136, 255, 0.25);
+  border-radius: 4px;
+}
+
+[data-md-color-scheme="slate"] ::-webkit-scrollbar-thumb:hover {
+  background: rgba(179, 136, 255, 0.45);
+}
+
+/* ---------- 首页 hero ---------- */
+.hero {
+  text-align: center;
+  padding: 3rem 0 1.5rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero .subtitle {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero .pillars {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.hero .pillar {
+  background: rgba(179, 136, 255, 0.08);
+  border: 1px solid rgba(179, 136, 255, 0.2);
+  border-radius: 12px;
+  padding: 8px 18px;
+  font-size: 0.9rem;
+}
+
+/* 词条页顶部元信息：柔和小字 */
+.term-meta {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+[data-md-color-scheme="default"] .term-meta {
+  color: rgba(0, 0, 0, 0.45);
+}

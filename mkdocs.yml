@@ -1,0 +1,72 @@
+# AIGC 术语知识库 — MkDocs 配置
+site_name: AIGC 术语知识库
+site_description: 一线知识的沉淀与导航站 — 开源、Wiki 式、面向大众的 AIGC 术语库
+site_url: https://texxxxture.github.io/AIGC-Terminology-Wiki/
+repo_url: https://github.com/TEXXXXTURE/AIGC-Terminology-Wiki
+repo_name: GitHub
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: 切换到亮色
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到暗色
+  features:
+    - navigation.tracking
+    - navigation.top
+    - navigation.expand
+    - navigation.path
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - toc.integrate
+  icon:
+    logo: material/book-open-variant
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+  - mermaid2:
+      arguments:
+        theme: dark
+        securityLevel: loose
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.critic
+  - pymdownx.tasklist
+  - pymdownx.emoji
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/TEXXXXTURE/AIGC-Terminology-Wiki
