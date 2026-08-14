@@ -1,45 +1,48 @@
-/* ============================================
-   AIGC 术语知识库 — HF 风格主题
-   设计：深色星空底 + HuggingFace 多彩体系
-   品牌色：主橙 #FF9D0B / 亮黄 #FFD21E / 粉 #FF0789
-          绿 #21DE75 / 红 #F94040 / 蓝 #097EFF / 紫 #861FFF
-   原则：装饰只用 emoji（写在 Markdown 标题文字里），
-         CSS 不注入任何 Unicode 装饰字符；
-         深色底上所有文字对比度优先，阅读体验第一。
-   ============================================ */
+/* ========== AIGC 术语知识库 — HF 风格主题 ========== */
+/* 设计：深色星空底 + HuggingFace 多彩体系 */
+/* 品牌色：主橙 #FF9D0B / 亮黄 #FFD21E / 粉 #FF0789
+          绿 #21DE75 / 红 #F94040 / 蓝 #097EFF / 紫 #861FFF */
 
-/* ---------- 全局变量：HF 色系（深色 / 亮色统一覆盖） ---------- */
+/* ---------- 全局变量：深色/亮色双模式都精确覆盖 HF 色 ---------- */
 [data-md-color-scheme="slate"] {
   --md-default-bg-color: transparent;
   --md-primary-fg-color: #FF9D0B;         /* HF 橙 */
+  --md-primary-fg-color--light: #FFB74D;  /* HF 橙（浅阶） */
+  --md-primary-fg-color--dark: #D97B00;   /* HF 橙（深阶） */
   --md-accent-fg-color: #FF0789;          /* HF 粉 */
-  --md-typeset-a-color: #FFB74D;          /* 链接 = HF 橙的亮阶，深底对比更稳 */
+  --md-accent-fg-color--transparent: rgba(255,7,137,.1);
+  --md-typeset-a-color: #FFB74D;          /* 链接 = HF 橙亮阶，深底对比更稳 */
+  --md-typeset-a-color--hover: #FF0789;   /* 悬停 → HF 粉 */
 }
 
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color: #FF9D0B;
+  --md-primary-fg-color: #FF8D00;
+  --md-primary-fg-color--light: #FFB74D;
+  --md-primary-fg-color--dark: #D97B00;
   --md-accent-fg-color: #FF0789;
-  --md-typeset-a-color: #D97B00;          /* 亮底用深橙，保证对比度 */
+  --md-accent-fg-color--transparent: rgba(255,7,137,.08);
+  --md-typeset-a-color: #D97B00;          /* 亮底：深橙，白底上 #FF9D0B 对比不够 */
+  --md-typeset-a-color--hover: #FF0789;
 }
 
-/* ---------- 深色：星空渐变背景（非死黑） ---------- */
+/* ---------- 星空渐变背景（非死黑） ---------- */
 [data-md-color-scheme="slate"] .md-main {
   background:
-    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255, 157, 11, 0.10), transparent 60%),
-    radial-gradient(ellipse 60% 40% at 90% 110%, rgba(9, 126, 255, 0.08), transparent 60%),
-    radial-gradient(ellipse 50% 35% at 10% 100%, rgba(255, 7, 137, 0.05), transparent 60%),
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255,157,11,.10), transparent 60%),
+    radial-gradient(ellipse 60% 40% at 90% 110%, rgba(9,126,255,.08), transparent 60%),
+    radial-gradient(ellipse 50% 35% at 10% 100%, rgba(255,7,137,.05), transparent 60%),
     linear-gradient(180deg, #141018 0%, #1a1420 50%, #141018 100%);
   background-attachment: fixed;
 }
 
-/* 微噪点 */
+/* 微噪点纹理 */
 [data-md-color-scheme="slate"] .md-main::before {
   content: "";
   position: fixed;
   inset: 0;
   pointer-events: none;
-  opacity: 0.03;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: .03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   z-index: 0;
 }
 
@@ -51,12 +54,12 @@
 
 /* ---------- 玻璃态内容卡片 ---------- */
 [data-md-color-scheme="slate"] .md-content__inner {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 157, 11, 0.08);
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,157,11,.08);
   border-radius: 16px;
   padding: 1.2rem 1.8rem;
   backdrop-filter: blur(12px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 8px 32px rgba(0,0,0,.35);
 }
 
 /* ---------- 标题：HF 渐变（仅 h1） ---------- */
@@ -66,7 +69,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: .5px;
 }
 
 [data-md-color-scheme="default"] .md-content__inner h1 {
@@ -76,28 +79,27 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* h2 只做细分隔线，不加装饰字符 —— 阅读优先 */
 [data-md-color-scheme="slate"] .md-content__inner h2 {
-  border-bottom: 1px solid rgba(255, 157, 11, 0.2);
-  padding-bottom: 0.3em;
+  border-bottom: 1px solid rgba(255,157,11,.2);
+  padding-bottom: .3em;
 }
 
 /* ---------- 链接：HF 橙 → 悬停 HF 粉 ---------- */
 [data-md-color-scheme="slate"] .md-content__inner a {
   color: #FFB74D;
   text-decoration: none;
-  border-bottom: 1px solid rgba(255, 157, 11, 0.3);
-  transition: color 0.2s, border-color 0.2s;
+  border-bottom: 1px solid rgba(255,157,11,.3);
+  transition: all .2s;
 }
 
 [data-md-color-scheme="slate"] .md-content__inner a:hover {
-  color: #FF4DA6;
+  color: #FF0789;
   border-bottom-color: #FF0789;
 }
 
 /* ---------- 选中文字：HF 橙高亮 ---------- */
 [data-md-color-scheme="slate"] ::selection {
-  background: rgba(255, 157, 11, 0.35);
+  background: rgba(255,157,11,.35);
   color: #fff;
 }
 
@@ -107,59 +109,32 @@
   outline-offset: 2px;
 }
 
-/* ---------- 代码块 ---------- */
+/* ---------- 代码块：暗底玻璃态 ---------- */
 [data-md-color-scheme="slate"] .md-content__inner pre,
 [data-md-color-scheme="slate"] .md-content__inner code.highlight {
-  background: rgba(20, 16, 24, 0.7) !important;
-  border: 1px solid rgba(255, 157, 11, 0.12);
+  background: rgba(20,16,24,.7) !important;
+  border: 1px solid rgba(255,157,11,.12);
   border-radius: 10px;
 }
 
 /* ---------- 导航栏：毛玻璃 + HF 橙描边 ---------- */
 [data-md-color-scheme="slate"] .md-header {
-  background: rgba(20, 16, 24, 0.75) !important;
+  background: rgba(20,16,24,.75) !important;
   backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255, 157, 11, 0.15);
+  border-bottom: 1px solid rgba(255,157,11,.15);
 }
 
-/* ---------- 引用块 / 热词警示条（HF 黄风格） ---------- */
-.hot-badge,
-.md-content__inner blockquote {
-  border-left: 4px solid #FFD21E;
-  background: rgba(255, 210, 30, 0.06);
-  border-radius: 0 8px 8px 0;
-}
-
-/* ---------- 表格：HF 风格圆角 ---------- */
-[data-md-color-scheme="slate"] .md-content__inner table {
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-[data-md-color-scheme="slate"] .md-content__inner table th {
-  background: rgba(255, 157, 11, 0.12);
-  color: #FFD21E;
-}
-
-[data-md-color-scheme="slate"] .md-content__inner table tr:nth-child(even) {
-  background: rgba(255, 255, 255, 0.02);
+/* ---------- 隐藏 md-status 灰色感叹号圆圈（对读者无意义） ---------- */
+.md-status {
+  display: none !important;
 }
 
 /* ---------- 侧边栏导航激活态：HF 橙 / 黄 ---------- */
 [data-md-color-scheme="slate"] .md-nav__link--active {
   color: #FF9D0B !important;
 }
-
 [data-md-color-scheme="slate"] .md-nav__item--active > .md-nav__link {
   color: #FFD21E !important;
-}
-
-/* ---------- 亮色模式微调 ---------- */
-[data-md-color-scheme="default"] .md-content__inner {
-  background: rgba(255, 157, 11, 0.02);
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  border-radius: 16px;
-  padding: 1.2rem 1.8rem;
 }
 
 /* ---------- 滚动条：HF 橙 ---------- */
@@ -167,39 +142,30 @@
   width: 8px;
   height: 8px;
 }
-
 [data-md-color-scheme="slate"] ::-webkit-scrollbar-thumb {
-  background: rgba(255, 157, 11, 0.25);
+  background: rgba(255,157,11,.25);
   border-radius: 4px;
 }
-
 [data-md-color-scheme="slate"] ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 157, 11, 0.45);
+  background: rgba(255,157,11,.45);
 }
 
-/* ============================================
-   首页 hero（HF 风格：多彩 pill + 玻璃态）
-   ============================================ */
+/* ============================================ */
+/*  首页 hero（HF 风格：多彩 pill + 玻璃态）       */
+/* ============================================ */
 .hero {
   text-align: center;
   padding: 3rem 0 1.5rem;
 }
-
 .hero h1 {
   font-size: 2.2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
 }
-
 .hero .subtitle {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255,255,255,.65);
   font-size: 1.05rem;
   margin-bottom: 1.5rem;
 }
-
-[data-md-color-scheme="default"] .hero .subtitle {
-  color: rgba(0, 0, 0, 0.6);
-}
-
 .hero .pillars {
   display: flex;
   gap: 12px;
@@ -207,104 +173,50 @@
   flex-wrap: wrap;
   margin-top: 1rem;
 }
-
-/* HF 多彩 pill：每根柱子一个 HF 色
-   彩色细边 + 同色 8% 底 + 提亮文字，深底上可读性优先 */
 .hero .pillar {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.15);
   border-radius: 24px;
   padding: 8px 20px;
-  font-size: 0.9rem;
-  transition: transform 0.2s, box-shadow 0.2s;
+  font-size: .9rem;
+  transition: transform .2s, box-shadow .2s;
 }
-
+.hero .pillar:nth-child(1) { border-color: #FF9D0B; color: #FFB74D; background: rgba(255,157,11,.08); }
+.hero .pillar:nth-child(2) { border-color: #21DE75; color: #5ce896; background: rgba(33,222,117,.08); }
+.hero .pillar:nth-child(3) { border-color: #FF0789; color: #ff4da6; background: rgba(255,7,137,.08); }
+.hero .pillar:nth-child(4) { border-color: #097EFF; color: #4da6ff; background: rgba(9,126,255,.08); }
 .hero .pillar:hover {
   transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(255,157,11,.2);
 }
-
-.hero .pillar:nth-child(1) {
-  border-color: rgba(255, 157, 11, 0.6);
-  background: rgba(255, 157, 11, 0.08);
-  color: #FFB74D;
-}
-.hero .pillar:nth-child(1):hover { box-shadow: 0 4px 16px rgba(255, 157, 11, 0.25); }
-
-.hero .pillar:nth-child(2) {
-  border-color: rgba(33, 222, 117, 0.55);
-  background: rgba(33, 222, 117, 0.08);
-  color: #5CE896;
-}
-.hero .pillar:nth-child(2):hover { box-shadow: 0 4px 16px rgba(33, 222, 117, 0.22); }
-
-.hero .pillar:nth-child(3) {
-  border-color: rgba(255, 7, 137, 0.55);
-  background: rgba(255, 7, 137, 0.08);
-  color: #FF4DA6;
-}
-.hero .pillar:nth-child(3):hover { box-shadow: 0 4px 16px rgba(255, 7, 137, 0.25); }
-
-.hero .pillar:nth-child(4) {
-  border-color: rgba(9, 126, 255, 0.55);
-  background: rgba(9, 126, 255, 0.08);
-  color: #4DA6FF;
-}
-.hero .pillar:nth-child(4):hover { box-shadow: 0 4px 16px rgba(9, 126, 255, 0.25); }
-
-/* 亮色模式下 pill 文字加深，保证对比度 */
-[data-md-color-scheme="default"] .hero .pillar:nth-child(1) { color: #D97B00; }
-[data-md-color-scheme="default"] .hero .pillar:nth-child(2) { color: #12A352; }
-[data-md-color-scheme="default"] .hero .pillar:nth-child(3) { color: #D1006E; }
-[data-md-color-scheme="default"] .hero .pillar:nth-child(4) { color: #0968D1; }
 
 /* ---------- 词条页顶部元信息 ---------- */
 .term-meta {
-  color: rgba(255, 255, 255, 0.45);
-  font-size: 0.85rem;
+  color: rgba(255,255,255,.45);
+  font-size: .85rem;
   margin-bottom: 1.5rem;
 }
-
 [data-md-color-scheme="default"] .term-meta {
-  color: rgba(0, 0, 0, 0.45);
+  color: rgba(0,0,0,.45);
 }
 
-/* ============================================
-   移动端适配（≤ 44.9375em ≈ 手机竖屏）
-   ============================================ */
-@media screen and (max-width: 44.9375em) {
-  .hero {
-    padding: 1.8rem 0 1rem;
-  }
+/* ============================================ */
+/*  移动端响应式                                  */
+/* ============================================ */
+@media (max-width: 44.9375em) {
+  .hero h1 { font-size: 1.6rem; }
+  .hero .pillars { gap: 8px; }
+  .hero .pillar { padding: 6px 14px; font-size: .8rem; }
+  [data-md-color-scheme="slate"] .md-content__inner { padding: 1rem; }
+  .hero .pillar:hover { transform: none; } /* 触摸设备禁用悬浮位移 */
+}
 
-  .hero h1 {
-    font-size: 1.6rem;
-    letter-spacing: 0;
-  }
-
-  .hero .subtitle {
-    font-size: 0.95rem;
-    padding: 0 0.5rem;
-  }
-
-  .hero .pillars {
-    gap: 8px;
-  }
-
-  .hero .pillar {
-    padding: 6px 14px;
-    font-size: 0.8rem;
-  }
-
-  /* 小屏去掉 hover 位移，避免触摸设备残留状态 */
-  .hero .pillar:hover {
-    transform: none;
-    box-shadow: none;
-  }
-
-  /* 玻璃卡片在小屏收紧内边距，圆角略小 */
-  [data-md-color-scheme="slate"] .md-content__inner,
-  [data-md-color-scheme="default"] .md-content__inner {
-    padding: 0.8rem 1rem;
-    border-radius: 12px;
-  }
+/* ============================================ */
+/*  亮色模式微调                                  */
+/* ============================================ */
+[data-md-color-scheme="default"] .md-content__inner {
+  background: rgba(255,157,11,.02);
+  border: 1px solid rgba(0,0,0,.05);
+  border-radius: 16px;
+  padding: 1.2rem 1.8rem;
 }
