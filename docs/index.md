@@ -6,10 +6,10 @@ title: AIGC 术语知识库
   <h1>AIGC 术语知识库</h1>
   <div class="subtitle">一线知识的沉淀与导航站 — 开源、Wiki 式、面向大众的 AIGC 术语库</div>
   <div class="pillars">
-    <span class="pillar">🔼 上限靠来源</span>
-    <span class="pillar">✅ 标准靠校验</span>
-    <span class="pillar">🌱 生态靠开放</span>
-    <span class="pillar">🔗 信任靠留痕</span>
+    <span class="pillar">📚 上限靠来源</span>
+    <span class="pillar">🧪 标准靠校验</span>
+    <span class="pillar">🤗 生态靠开放</span>
+    <span class="pillar">🔖 信任靠留痕</span>
   </div>
 </div>
 
