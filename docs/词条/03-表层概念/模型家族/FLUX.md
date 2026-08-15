@@ -52,5 +52,5 @@ FLUX 的「半开源」属性争议大：dev 版只开源权重、商用要付�
 
 - [Black Forest Labs](../模型厂商/Black Forest Labs.md)
 - [Stable Diffusion](Stable Diffusion.md)
-- [扩散模型](../01-底层原理/扩散模型.md)
-- [蒸馏与Turbo](微调/蒸馏与Turbo.md)
+- [扩散模型](../../01-底层原理/扩散模型.md)
+- [蒸馏与Turbo](../微调/蒸馏与Turbo.md)

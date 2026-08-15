@@ -53,5 +53,5 @@ SD 的训练数据（LAION 爬取）引发大规模版权诉讼，是生成式 A
 
 - [Stability AI](../模型厂商/Stability AI.md)
 - [FLUX](FLUX.md)
-- [LoRA](微调/LoRA.md)
-- [潜空间](../02-组件/潜空间.md)
+- [LoRA](../微调/LoRA.md)
+- [潜空间](../../02-组件/潜空间.md)

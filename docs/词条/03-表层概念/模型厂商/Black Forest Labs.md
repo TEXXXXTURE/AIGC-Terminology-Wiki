@@ -52,5 +52,5 @@ FLUX 的开源程度一直有争议：FLUX.1-dev 只开源权重不开源训练�
 
 - [Stability AI](Stability AI.md)
 - [FLUX](../模型家族/FLUX.md)
-- [GGUF](量化格式/GGUF.md)
-- [bf16](量化格式/bf16.md)
+- [GGUF](../量化格式/GGUF.md)
+- [bf16](../量化格式/bf16.md)

@@ -51,7 +51,7 @@ Ollama 的「开箱即用」背后是封装——它不支持所有模型（尤�
 
 ## 参见
 
-- [llama.cpp](llama.cpp.md)
-- [GGUF](量化格式/GGUF.md)
+- [llama.cpp](../../06-IT行业/框架与库/llama.cpp.md)
+- [GGUF](../量化格式/GGUF.md)
 - [Llama](../模型家族/Llama.md)
-- [vLLM](vLLM.md)
+- [vLLM../../../06-IT行业/框架与库/vLLM.md

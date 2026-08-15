@@ -52,6 +52,6 @@ MusicGen 的生成时长有限（默认 10-30 秒，需拼接做长曲），且�
 ## 参见
 
 - [Meta](../模型厂商/Meta.md)
-- [Stable Audio](../模型家族/Stable Audio.md)
-- [ACE-Step](../模型家族/ACE-Step.md)
-- [训练与微调](../01-底层原理/训练与微调.md)
+- [Stable Audio](Stable Audio.md)
+- [ACE-Step](ACE-Step.md)
+- [训练与微调](../../01-底层原理/训练与微调.md)

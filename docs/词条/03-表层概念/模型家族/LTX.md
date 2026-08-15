@@ -52,5 +52,5 @@ LTX 早期有「快但糊」口碑——速度换细节，社区戏称「短视�
 
 - [Lightricks](../模型厂商/Lightricks.md)
 - [Wan](Wan.md)
-- [MoE](../01-底层原理/MoE.md)
-- [GGUF](量化格式/GGUF.md)
+- [MoE](../../01-底层原理/MoE.md)
+- [GGUF](../量化格式/GGUF.md)

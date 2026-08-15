@@ -54,5 +54,5 @@ Stability 是 AIGC 圈最戏剧性的公司：开创者、开源功臣，却因�
 
 - [Black Forest Labs](Black Forest Labs.md)
 - [Stable Diffusion](../模型家族/Stable Diffusion.md)
-- [SDXL](../模型家族/SDXL.md)
-- [LoRA](微调/LoRA.md)
+- [SDXL](../模型家族/Stable Diffusion.md)
+- [LoRA](../微调/LoRA.md)

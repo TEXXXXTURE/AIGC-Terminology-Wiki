@@ -53,5 +53,5 @@ LTX 早期模型有「快但糊」的口碑——速度换来的是细节不足�
 
 - [MiniMax](MiniMax.md)
 - [LTX](../模型家族/LTX.md)
-- [MoE](01-底层原理/MoE.md)
-- [GGUF](量化格式/GGUF.md)
+- [MoE](../../01-底层原理/MoE.md)
+- [GGUF](../量化格式/GGUF.md)

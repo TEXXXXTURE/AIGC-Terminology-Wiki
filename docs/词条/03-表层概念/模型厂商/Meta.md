@@ -51,5 +51,5 @@ Llama 的许可证（Llama Community License）对商用有月活限制（7 亿+
 
 - [Llama](../模型家族/Llama.md)
 - [MusicGen](../模型家族/MusicGen.md)
-- [GGUF](量化格式/GGUF.md)
+- [GGUF](../量化格式/GGUF.md)
 - [Ollama](../工具/Ollama.md)

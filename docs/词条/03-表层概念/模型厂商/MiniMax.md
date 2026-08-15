@@ -50,4 +50,4 @@ H3 的许可证是「社区许可证」（Community License Agreement），商�
 - [阿里](阿里.md)
 - [Black Forest Labs](Black Forest Labs.md)
 - [MiniMax H3](../模型家族/MiniMax H3.md)
-- [GGUF](量化格式/GGUF.md)
+- [GGUF](../量化格式/GGUF.md)

@@ -41,7 +41,7 @@ LoRA（Low-Rank Adaptation，低秩适配）是微软 2021 年提出的微调技
 
 LoRA 论文（arXiv:2106.09685）2021 年发表，原本是为 GPT 这类大语言模型设计的。2022 年底 Stable Diffusion 开源后，社区发现这套方法对图像模型同样好用，配合 kohya-ss 的训练脚本，普通玩家用一张消费级显卡就能训练自己的 LoRA。CivitAI 等平台上的共享 LoRA 很快数以万计。
 
-2023 年起出现「加速 LoRA」这一分支：LCM-LoRA、Turbo-LoRA 把[蒸馏](../微调/蒸馏与Turbo.md)的结果打包成 LoRA，挂在原版底模上就能几步出图（A1111 社区为此专门加了 lcm 采样器支持，见 issue #13952）。H3 的 H3-Turbo-Lora 就是这一路线的实例。
+2023 年起出现「加速 LoRA」这一分支：LCM-LoRA、Turbo-LoRA 把[蒸馏](蒸馏与Turbo.md)的结果打包成 LoRA，挂在原版底模上就能几步出图（A1111 社区为此专门加了 lcm 采样器支持，见 issue #13952）。H3 的 H3-Turbo-Lora 就是这一路线的实例。
 
 ## 应用
 

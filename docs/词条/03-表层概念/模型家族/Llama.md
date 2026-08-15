@@ -52,5 +52,5 @@ Llama 许可证（Llama Community License）对超大月活（7 亿+）商用有
 
 - [Meta](../模型厂商/Meta.md)
 - [Qwen](Qwen.md)
-- [GGUF](量化格式/GGUF.md)
+- [GGUF](../量化格式/GGUF.md)
 - [Ollama](../工具/Ollama.md)
