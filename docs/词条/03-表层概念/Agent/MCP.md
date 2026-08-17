@@ -35,7 +35,7 @@ MCP（Model Context Protocol，模型上下文协议）是 Anthropic 于 2024 �
 
 ## 原理
 
-MCP 采用客户端—服务器架构：宿主应用（如 Claude Desktop）里的 MCP 客户端，通过标准协议连到一个个 MCP 服务器；每个服务器对外暴露三类能力——工具（Tools，可执行的动作）、资源（Resources，可读的数据）、提示模板（Prompts）。连接建立后，服务器把工具描述交给宿主，宿主再经 [Function Calling](Function%20Calling.md) 让模型决定何时调用——也就是说 MCP 不取代函数调用，而是把「工具从哪来、长什么样」标准化。这些工具描述和返回结果最终都进[上下文窗口](../LLM/上下文窗口.md)，所以接的服务器越多、窗口压力越大。
+MCP 采用客户端—服务器架构：宿主应用（如 Claude Desktop）里的 MCP 客户端，通过标准协议连到一个个 MCP 服务器；每个服务器对外暴露三类能力——工具（Tools，可执行的动作）、资源（Resources，可读的数据）、提示模板（Prompts）。连接建立后，服务器把工具描述交给宿主，宿主再经 [Function Calling](Function Calling.md) 让模型决定何时调用——也就是说 MCP 不取代函数调用，而是把「工具从哪来、长什么样」标准化。这些工具描述和返回结果最终都进[上下文窗口](../LLM/上下文窗口.md)，所以接的服务器越多、窗口压力越大。
 
 ## 由来与历史
 
@@ -52,6 +52,6 @@ MCP 采用客户端—服务器架构：宿主应用（如 Claude Desktop）里�
 
 ## 参见
 
-- [Function Calling](Function%20Calling.md)
+- [Function Calling](Function Calling.md)
 - [Agent](Agent.md)
 - [上下文窗口](../LLM/上下文窗口.md)

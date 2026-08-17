@@ -36,11 +36,11 @@ Agent（智能体）是一种「能自己干活」的大模型应用：普通的
 
 ## 原理
 
-Agent 的核心是一个「思考—行动—观察」（Thought / Action / Observation）循环：LLM 先输出一段思考决定下一步做什么，然后发起一个动作（通常是[Function Calling](Function%20Calling.md)，即调用一个工具），工具执行后把结果作为「观察」喂回模型，模型再决定下一步，直到任务完成。这个模式来自 ReAct 论文（arXiv:2210.03629）。循环每转一轮，思考和结果都占[上下文窗口](../LLM/上下文窗口.md)，所以 Agent 的实际能力受窗口大小和工具质量两头制约；需要记住的长期信息则常靠 [RAG](../LLM/RAG.md) 检索补充。大脑本身仍是 [Transformer](../../01-底层原理/Transformer.md)，这里不重复展开。
+Agent 的核心是一个「思考—行动—观察」（Thought / Action / Observation）循环：LLM 先输出一段思考决定下一步做什么，然后发起一个动作（通常是[Function Calling](Function Calling.md)，即调用一个工具），工具执行后把结果作为「观察」喂回模型，模型再决定下一步，直到任务完成。这个模式来自 ReAct 论文（arXiv:2210.03629）。循环每转一轮，思考和结果都占[上下文窗口](../LLM/上下文窗口.md)，所以 Agent 的实际能力受窗口大小和工具质量两头制约；需要记住的长期信息则常靠 [RAG](../LLM/RAG.md) 检索补充。大脑本身仍是 [Transformer](../../01-底层原理/Transformer.md)，这里不重复展开。
 
 ## 由来与历史
 
-让语言模型「会用工具」的想法在 2023 年初集中爆发：Meta 的 Toolformer（arXiv:2302.04761）证明模型可以自学何时调用计算器、搜索引擎；几乎同时，LangChain 等框架把「LLM + 工具 + 循环」工程化，AutoGPT 一度成为现象级开源项目。2023 年中 OpenAI 推出 [Function Calling](Function%20Calling.md)，把工具调用从「提示词技巧」变成模型的原生能力；2024 年 Anthropic 推出 [MCP](MCP.md)，进一步把「接什么工具」标准化。到 2025 年，Claude Code、Manus、各家 Deep Research 让 Agent 从演示走向日常生产力工具。
+让语言模型「会用工具」的想法在 2023 年初集中爆发：Meta 的 Toolformer（arXiv:2302.04761）证明模型可以自学何时调用计算器、搜索引擎；几乎同时，LangChain 等框架把「LLM + 工具 + 循环」工程化，AutoGPT 一度成为现象级开源项目。2023 年中 OpenAI 推出 [Function Calling](Function Calling.md)，把工具调用从「提示词技巧」变成模型的原生能力；2024 年 Anthropic 推出 [MCP](MCP.md)，进一步把「接什么工具」标准化。到 2025 年，Claude Code、Manus、各家 Deep Research 让 Agent 从演示走向日常生产力工具。
 
 ## 应用
 
@@ -53,7 +53,7 @@ Agent 的核心是一个「思考—行动—观察」（Thought / Action / Obse
 
 ## 参见
 
-- [Function Calling](Function%20Calling.md)
+- [Function Calling](Function Calling.md)
 - [MCP](MCP.md)
 - [上下文窗口](../LLM/上下文窗口.md)
 - [RAG](../LLM/RAG.md)

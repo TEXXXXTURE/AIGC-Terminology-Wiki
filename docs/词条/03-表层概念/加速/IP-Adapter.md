@@ -20,8 +20,11 @@ relations:
     note: 语义层面的风格迁移可与风格模型叠加使用
   - target: 扩散模型
     note: IP-Adapter 在扩散模型去噪过程中注入图像条件，不改权重
-  - target: Textual Inversion
+  - target: TextualInversion
     note: 同属「不动模型权重」的轻量语义注入路线
+  - type: contrast
+    target: ControlNet
+    note: 同为条件注入，ControlNet 管结构、IP-Adapter 管语义
 created: 2026-08-14
 updated: 2026-08-14
 revisions: 1
@@ -61,4 +64,5 @@ ComfyUI 里通过 **ComfyUI_IPAdapter_plus** 插件使用：需要 IPAdapter 模
 - [CLIP](../../02-组件/CLIP.md)
 - [扩散模型](../../01-底层原理/扩散模型.md)
 - [Textual Inversion](TextualInversion.md)
+- [ControlNet](../多模态/ControlNet.md)
 - [风格模型](../微调/风格模型.md)

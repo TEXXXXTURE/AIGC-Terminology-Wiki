@@ -21,7 +21,7 @@ relations:
   - type: applies_to
     target: Tokenizer
     note: 文档切块前先被分词
-  - target: Prompt
+  - target: 提示词工程
     note: 检索结果最终拼进提示词
   - type: applies_to
     target: 注意力机制
