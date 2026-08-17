@@ -50,8 +50,8 @@
 
 ## 访问
 
-- 网站：https://texxxxture.github.io/AIGC-Terminology-Wiki/
-- 仓库：https://github.com/TEXXXXTURE/AIGC-Terminology-Wiki
+- 网站：https://texxxxture.github.io/ai-knowledge-base/
+- 仓库：https://github.com/TEXXXXTURE/ai-knowledge-base
 
 ## 参与
 
