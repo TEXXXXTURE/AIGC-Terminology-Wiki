@@ -76,13 +76,16 @@ nav:
   - AI 知识地图: 项目文档/map.md
   - AI 基础:
     - 底层原理:
+      - DiT: 词条/01-底层原理/DiT.md
       - MoE: 词条/01-底层原理/MoE.md
       - Transformer: 词条/01-底层原理/Transformer.md
+      - 强化学习: 词条/01-底层原理/强化学习.md
       - 扩散模型: 词条/01-底层原理/扩散模型.md
       - 注意力机制: 词条/01-底层原理/注意力机制.md
       - 浮点数与精度: 词条/01-底层原理/浮点数与精度.md
       - 生成模型: 词条/01-底层原理/生成模型.md
       - 神经网络: 词条/01-底层原理/神经网络.md
+      - 缩放法则: 词条/01-底层原理/缩放法则.md
       - 训练与微调: 词条/01-底层原理/训练与微调.md
       - 量化: 词条/01-底层原理/量化.md
     - 组件:
@@ -102,6 +105,8 @@ nav:
       - safetensors: 词条/03-表层概念/量化格式/safetensors.md
     - 微调:
       - LoRA: 词条/03-表层概念/微调/LoRA.md
+      - PEFT: 词条/03-表层概念/微调/PEFT.md
+      - 全量微调: 词条/03-表层概念/微调/全量微调.md
       - 蒸馏与Turbo: 词条/03-表层概念/微调/蒸馏与Turbo.md
       - 风格模型: 词条/03-表层概念/微调/风格模型.md
     - 加速:
@@ -111,17 +116,28 @@ nav:
     - 对齐:
       - DPO: 词条/03-表层概念/对齐/DPO.md
       - RLHF: 词条/03-表层概念/对齐/RLHF.md
+      - 对齐: 词条/03-表层概念/对齐/对齐.md
+      - 提示注入: 词条/03-表层概念/对齐/提示注入.md
       - 越狱: 词条/03-表层概念/对齐/越狱.md
     - 模型厂商:
+      - Anthropic: 词条/03-表层概念/模型厂商/Anthropic.md
       - Black Forest Labs: 词条/03-表层概念/模型厂商/Black Forest Labs.md
+      - DeepSeek: 词条/03-表层概念/模型厂商/DeepSeek.md
+      - Google: 词条/03-表层概念/模型厂商/Google.md
       - Lightricks: 词条/03-表层概念/模型厂商/Lightricks.md
       - Meta: 词条/03-表层概念/模型厂商/Meta.md
       - MiniMax: 词条/03-表层概念/模型厂商/MiniMax.md
+      - OpenAI: 词条/03-表层概念/模型厂商/OpenAI.md
       - Stability AI: 词条/03-表层概念/模型厂商/Stability AI.md
+      - 智谱: 词条/03-表层概念/模型厂商/智谱.md
+      - 月之暗面: 词条/03-表层概念/模型厂商/月之暗面.md
       - 阿里: 词条/03-表层概念/模型厂商/阿里.md
     - 模型家族:
       - ACE-Step: 词条/03-表层概念/模型家族/ACE-Step.md
+      - DeepSeek: 词条/03-表层概念/模型家族/DeepSeek.md
       - FLUX: 词条/03-表层概念/模型家族/FLUX.md
+      - GLM: 词条/03-表层概念/模型家族/GLM.md
+      - Kimi: 词条/03-表层概念/模型家族/Kimi.md
       - LTX: 词条/03-表层概念/模型家族/LTX.md
       - Llama: 词条/03-表层概念/模型家族/Llama.md
       - MiniMax H3: 词条/03-表层概念/模型家族/MiniMax H3.md
@@ -148,6 +164,7 @@ nav:
       - RAG 工程: 词条/04-LLM工程/RAG 工程.md
       - 微调工程: 词条/04-LLM工程/微调工程.md
       - 投机解码: 词条/04-LLM工程/投机解码.md
+      - 推理优化: 词条/04-LLM工程/推理优化.md
       - 推理引擎: 词条/04-LLM工程/推理引擎.md
       - 提示词工程: 词条/04-LLM工程/提示词工程.md
       - 模型数据总览: 词条/04-LLM工程/模型数据总览.md
@@ -217,4 +234,3 @@ nav:
     - PRD-Agent版: 项目文档/PRD-Agent版.md
     - PRD-人类版: 项目文档/PRD-人类版.md
     - map: 项目文档/map.md
-

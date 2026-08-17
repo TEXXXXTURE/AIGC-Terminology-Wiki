@@ -53,3 +53,16 @@ Qwen 迭代太快，老版本（Qwen1/Qwen2）快速过气，社区有「追新�
 - [Llama](Llama.md)
 - [文本编码器](../../02-组件/文本编码器.md)
 - [MiniMax H3](MiniMax H3.md)
+- [模型数据总览](../../04-LLM工程/模型数据总览.md)
+
+## AA 评测数据 (2026-08-17)
+
+Qwen3.8 Max 在 Artificial Analysis 评测中的数据:
+
+- 智能指数: 58.08
+- 输出速度: 46.2 tok/s
+- 输入价格: $2.00/M tokens
+- 输出价格: $6.00/M tokens
+- 缓存命中: $0.25/M tokens
+- 上下文窗口: 1M tokens
+- 全知指数: 3.4
