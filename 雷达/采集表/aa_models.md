@@ -1,0 +1,1176 @@
+# AA 模型数据采集表
+
+> 来源: https://artificialanalysis.ai/models | 采集: 2026-08-17 | 状态: proposed(未审核)
+> 规则: 本文件是 JSON 数组,机器可读;正式引用前需人工审核。由 scripts/aa_collect.py 维护。
+
+```json
+[
+  {
+    "id": "SRC-AA-0001",
+    "title": "A.X-K2",
+    "url": "https://artificialanalysis.ai/models/a-x-k2",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "intelligenceIndex": 35.0147941618563
+    }
+  },
+  {
+    "id": "SRC-AA-0002",
+    "title": "Claude 4.5 Haiku",
+    "url": "https://artificialanalysis.ai/models/claude-4-5-haiku-reasoning",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "mid": 611.5,
+      "lower": 601.3,
+      "upper": 620.87,
+      "omniscienceIndex": -4.36666666666667,
+      "opennessIndex": 11.11111111111111,
+      "answer": 0.03272116422258826,
+      "reasoning": 0.08607986478994242,
+      "cacheWrite": 0.05439280219084765,
+      "cacheHit": 0.0374801573596142,
+      "input": 0.006774372088464413,
+      "answerCost": 38.795289999999994,
+      "reasoningCost": 355.309295,
+      "cacheWriteCost": 39.105577334899614,
+      "cacheReadCost": 24.967932113208033,
+      "nonCacheInputCost": 13.03966,
+      "cacheHitPrice": 0.1,
+      "inputPrice": 1,
+      "outputPrice": 5,
+      "outputSpeed": 94.2534476649424,
+      "timePerTask": 3.125883436758675,
+      "reasoningTime": 0,
+      "inputTime": 16.3750554585,
+      "answerTime": 5.304845736544608
+    }
+  },
+  {
+    "id": "SRC-AA-0003",
+    "title": "Claude Fable 5 (with fallback)",
+    "url": "https://artificialanalysis.ai/models/claude-fable-5",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "artificialAnalysisIntelligenceIndex": 62.0726622017462,
+      "medianOutputSpeed": 68.5385992684221,
+      "costPerIntelligenceIndexTask": 3.139584292089737,
+      "intelligenceIndex": 62.0726622017462,
+      "mid": 1574.47,
+      "lower": 1564.02,
+      "upper": 1584.59,
+      "omniscienceIndex": 43.3,
+      "answer": 8898.652961610953,
+      "reasoning": 26666.62588199352,
+      "contextWindowTokens": 1000000,
+      "outputSpeed": 68.5385992684221,
+      "timePerTask": 5.299236003089734,
+      "reasoningTime": 0,
+      "inputTime": 122.83130361,
+      "answerTime": 7.295159302013425
+    }
+  },
+  {
+    "id": "SRC-AA-0004",
+    "title": "Claude Opus 5 (max)",
+    "url": "https://artificialanalysis.ai/models/claude-opus-5",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "artificialAnalysisIntelligenceIndex": 63.0532452071291,
+      "medianOutputSpeed": 53.0741164522774,
+      "costPerIntelligenceIndexTask": 2.3368592081245625,
+      "intelligenceIndex": 63.0532452071291,
+      "mid": 1714.59,
+      "lower": 1703.61,
+      "upper": 1727.2,
+      "omniscienceIndex": 37.0666666666667,
+      "cacheHitPrice": 0.5,
+      "inputPrice": 5,
+      "outputPrice": 25,
+      "contextWindowTokens": 1000000,
+      "outputSpeed": 53.0741164522774,
+      "timePerTask": 7.757661481201145,
+      "reasoningTime": 0,
+      "inputTime": 49.4255123554999,
+      "answerTime": 9.420788011602312
+    }
+  },
+  {
+    "id": "SRC-AA-0005",
+    "title": "Command A+",
+    "url": "https://artificialanalysis.ai/models/command-a-plus",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "mid": 369.34,
+      "lower": 354.48,
+      "upper": 382.78,
+      "omniscienceIndex": -4.01666666666667,
+      "opennessIndex": 38.888888888888886,
+      "answer": 6955.148958077354,
+      "reasoning": 14233.179195061166,
+      "outputSpeed": 200.163303913566,
+      "timePerTask": 1.7233169083211834,
+      "reasoningTime": 9.991841465924416,
+      "inputTime": 0.409290679999983,
+      "answerTime": 2.497960366481104,
+      "activeParams": 25,
+      "passiveParams": 193
+    }
+  },
+  {
+    "id": "SRC-AA-0006",
+    "title": "DeepSeek V4 Pro 0813 (max)",
+    "url": "https://artificialanalysis.ai/models/deepseek-v4-pro",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "artificialAnalysisIntelligenceIndex": 53.1976849297815,
+      "medianOutputSpeed": 80.2214926652256,
+      "costPerIntelligenceIndexTask": 0.2520714190687621,
+      "intelligenceIndex": 53.1976849297815,
+      "omniscienceIndex": 0.833333333333333,
+      "answer": 0.030532724673265114,
+      "reasoning": 0.12343430764452964,
+      "cacheWrite": 0.048259744224672774,
+      "cacheHit": 0.040709750559582994,
+      "input": 0.009134891966711611,
+      "answerCost": 33.514390799999994,
+      "reasoningCost": 472.57379532,
+      "cacheWriteCost": 43.711910880000005,
+      "cacheReadCost": 36.981986492,
+      "nonCacheInputCost": 17.73153888,
+      "cacheHitPrice": 0.044,
+      "inputPrice": 1.32,
+      "outputPrice": 3.96,
+      "contextWindowTokens": 1000000,
+      "outputSpeed": 80.2214926652256,
+      "timePerTask": 6.415343558440507,
+      "reasoningTime": 24.930974649727002,
+      "inputTime": 1.71393660100005,
+      "answerTime": 6.2327436624317505,
+      "activeParams": 49,
+      "passiveParams": 1551
+    }
+  },
+  {
+    "id": "SRC-AA-0007",
+    "title": "GLM-5.2 (max)",
+    "url": "https://artificialanalysis.ai/models/glm-5-2",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "artificialAnalysisIntelligenceIndex": 52.6409563457385,
+      "medianOutputSpeed": 154.619225353291,
+      "costPerIntelligenceIndexTask": 0.32055302882770725,
+      "intelligenceIndex": 52.6409563457385,
+      "mid": 1251.91,
+      "lower": 1243.38,
+      "upper": 1260.32,
+      "omniscienceIndex": 4.43333333333333,
+      "opennessIndex": 44.44444444444444,
+      "answer": 0.03016901987244419,
+      "reasoning": 0.1708443404786626,
+      "cacheWrite": 0,
+      "cacheHit": 0.11014460562636028,
+      "input": 0.00939506285024027,
+      "answerCost": 32.915696000000004,
+      "reasoningCost": 587.1186332,
+      "cacheWriteCost": 0,
+      "cacheReadCost": 96.75456901227047,
+      "nonCacheInputCost": 17.707790799999998,
+      "cacheHitPrice": 0.235,
+      "inputPrice": 1.4,
+      "outputPrice": 4.4,
+      "contextWindowTokens": 1000000,
+      "outputSpeed": 154.619225353291,
+      "timePerTask": 4.5047419405278415,
+      "reasoningTime": 12.935002069957214,
+      "inputTime": 1.371338982,
+      "answerTime": 3.2337505174893035,
+      "activeParams": 40,
+      "passiveParams": 713
+    }
+  },
+  {
+    "id": "SRC-AA-0008",
+    "title": "GPT-5.5 Pro (xhigh)",
+    "url": "https://artificialanalysis.ai/models/gpt-5-5-pro",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "contextWindowTokens": 922000
+    }
+  },
+  {
+    "id": "SRC-AA-0009",
+    "title": "GPT-5.6 Luna (max)",
+    "url": "https://artificialanalysis.ai/models/gpt-5-6-luna",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "artificialAnalysisIntelligenceIndex": 52.3180827840984,
+      "medianOutputSpeed": 175.265741094066,
+      "costPerIntelligenceIndexTask": 0.047127533600050245,
+      "intelligenceIndex": 52.3180827840984,
+      "answer": 0.006783007095775993,
+      "reasoning": 0.017271978652439148,
+      "cacheWrite": 0.006587632101401588,
+      "cacheHit": 0.015034689813312218,
+      "input": 0.001450225937121299,
+      "answerCost": 7.043712,
+      "reasoningCost": 142.99772159999998,
+      "cacheWriteCost": 5.705610985395022,
+      "cacheReadCost": 13.746064101168397,
+      "nonCacheInputCost": 2.6755884,
+      "cacheHitPrice": 0.02,
+      "inputPrice": 0.2,
+      "outputPrice": 1.2,
+      "contextWindowTokens": 1000000,
+      "outputSpeed": 175.265741094066,
+      "timePerTask": 1.894662520525011,
+      "reasoningTime": 0,
+      "inputTime": 97.4873143555,
+      "answerTime": 2.8528108053452814
+    }
+  },
+  {
+    "id": "SRC-AA-0010",
+    "title": "GPT-5.6 Sol (max)",
+    "url": "https://artificialanalysis.ai/models/gpt-5-6-sol",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "artificialAnalysisIntelligenceIndex": 60.9298701329203,
+      "medianOutputSpeed": 71.4609969623679,
+      "costPerIntelligenceIndexTask": 1.2312110558767355,
+      "intelligenceIndex": 60.9298701329203,
+      "mid": 1503.58,
+      "lower": 1494.38,
+      "upper": 1513.82,
+      "omniscienceIndex": 21.9666666666667,
+      "answer": 0.18338967701669096,
+      "reasoning": 0.32297417154093183,
+      "cacheWrite": 0.21487626376087274,
+      "cacheHit": 0.47919652584541456,
+      "input": 0.030774417712825464,
+      "answerCost": 198.99891,
+      "reasoningCost": 1903.8804300000002,
+      "cacheWriteCost": 188.60637618774012,
+      "cacheReadCost": 470.79431090498076,
+      "nonCacheInputCost": 60.973839999999996,
+      "contextWindowTokens": 1000000,
+      "outputSpeed": 71.4609969623679,
+      "timePerTask": 3.9782904301102193,
+      "reasoningTime": 0,
+      "inputTime": 136.12186537,
+      "answerTime": 6.9968237395751025
+    }
+  },
+  {
+    "id": "SRC-AA-0011",
+    "title": "GPT-5.6 Terra (max)",
+    "url": "https://artificialanalysis.ai/models/gpt-5-6-terra",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "intelligenceIndex": 56.5755675890213,
+      "omniscienceIndex": 0.05,
+      "answer": 0.07097604476909948,
+      "reasoning": 0.1790741324398907,
+      "cacheWrite": 0.08137326625676856,
+      "cacheHit": 0.16282444925064163,
+      "input": 0.013770998413525484,
+      "answerCost": 74.57928000000001,
+      "reasoningCost": 1072.025868,
+      "cacheWriteCost": 67.60594588750477,
+      "cacheReadCost": 149.65761492899964,
+      "nonCacheInputCost": 25.793018,
+      "cacheHitPrice": 0.2,
+      "inputPrice": 2,
+      "outputPrice": 12,
+      "contextWindowTokens": 1000000,
+      "outputSpeed": 122.209377665386,
+      "timePerTask": 2.783757140747024
+    }
+  },
+  {
+    "id": "SRC-AA-0012",
+    "title": "Gemini 3.5 Flash-Lite",
+    "url": "https://artificialanalysis.ai/models/gemini-3-5-flash-lite",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "intelligenceIndex": 37.4387063722681,
+      "mid": 634.7,
+      "lower": 623.09,
+      "upper": 645.79,
+      "omniscienceIndex": 5.23333333333333,
+      "answer": 0.01319933333050162,
+      "reasoning": 0.021274730110394668,
+      "cacheWrite": 0.043688425187089305,
+      "cacheHit": 0.016286715586894304,
+      "input": 0.0020758344572263236,
+      "answerCost": 14.31587,
+      "reasoningCost": 94.184985,
+      "cacheWriteCost": 30.03242094127402,
+      "cacheReadCost": 10.912336265872597,
+      "nonCacheInputCost": 3.9439401,
+      "cacheHitPrice": 0.03,
+      "inputPrice": 0.3,
+      "outputPrice": 2.5,
+      "contextWindowTokens": 1000000,
+      "outputSpeed": 356.107950870849,
+      "timePerTask": 0.6470890164479355,
+      "reasoningTime": 0,
+      "inputTime": 9.46638685899998,
+      "answerTime": 1.4040686223861845
+    }
+  },
+  {
+    "id": "SRC-AA-0013",
+    "title": "Gemini 3.7 Flash (high)",
+    "url": "https://artificialanalysis.ai/models/gemini-3-7-flash",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "artificialAnalysisIntelligenceIndex": 56.0301180773699,
+      "costPerIntelligenceIndexTask": 0.40216581818386,
+      "intelligenceIndex": 56.0301180773699,
+      "mid": 1131.53,
+      "lower": 1121.43,
+      "upper": 1142.53,
+      "omniscienceIndex": 26.4833333333333,
+      "answer": 0.08549752341633073,
+      "reasoning": 0.05267865812064153,
+      "cacheWrite": 0.16038184790605348,
+      "cacheHit": 0.098386386338953,
+      "input": 0.005221402401881291,
+      "answerCost": 91.61064375,
+      "reasoningCost": 148.456125,
+      "cacheWriteCost": 145.63960094816392,
+      "cacheReadCost": 89.1310693051836,
+      "nonCacheInputCost": 9.88779825,
+      "cacheHitPrice": 0.075,
+      "inputPrice": 0.75,
+      "outputPrice": 3.75,
+      "contextWindowTokens": 1000000
+    }
+  },
+  {
+    "id": "SRC-AA-0014",
+    "title": "Grok 4.6 (high)",
+    "url": "https://artificialanalysis.ai/models/grok-4-6",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "artificialAnalysisIntelligenceIndex": 60.92297113115,
+      "medianOutputSpeed": 58.2621454232201,
+      "costPerIntelligenceIndexTask": 0.8366707813404866,
+      "intelligenceIndex": 60.92297113115,
+      "mid": 1576.59,
+      "lower": 1565.35,
+      "upper": 1588.06,
+      "omniscienceIndex": 30.4833333333333,
+      "answer": 0.05381575090397593,
+      "reasoning": 0.07659250373360933,
+      "cacheWrite": 0.29048007325655323,
+      "cacheHit": 0.4035767767262985,
+      "input": 0.012205676720049375,
+      "answerCost": 57.964631999999995,
+      "reasoningCost": 374.970102,
+      "cacheWriteCost": 253.6280328515188,
+      "cacheReadCost": 357.9413132871203,
+      "nonCacheInputCost": 23.961906,
+      "cacheHitPrice": 0.5,
+      "inputPrice": 2,
+      "outputPrice": 6,
+      "contextWindowTokens": 500000,
+      "outputSpeed": 58.2621454232201,
+      "timePerTask": 6.142821104131259,
+      "reasoningTime": 0,
+      "inputTime": 45.105516725,
+      "answerTime": 8.581901616700977
+    }
+  },
+  {
+    "id": "SRC-AA-0015",
+    "title": "Inkling",
+    "url": "https://artificialanalysis.ai/models/inkling",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "intelligenceIndex": 42.2947721285326,
+      "mid": 841.75,
+      "lower": 831.55,
+      "upper": 851.8,
+      "omniscienceIndex": 2,
+      "opennessIndex": 38.888888888888886,
+      "answer": 0.025453551346941643,
+      "reasoning": 0.07947718313661009,
+      "cacheWrite": 0.052805609827361065,
+      "cacheHit": 0.17501173420498548,
+      "input": 0.006136735618531401,
+      "answerCost": 27.1609443,
+      "reasoningCost": 491.03034705,
+      "cacheWriteCost": 40.00490214475402,
+      "cacheReadCost": 128.20399020539185,
+      "nonCacheInputCost": 11.878077,
+      "cacheHitPrice": 0.17,
+      "inputPrice": 1,
+      "outputPrice": 4.05,
+      "contextWindowTokens": 1000000,
+      "outputSpeed": 81.7694274228155,
+      "timePerTask": 5.059987119498934,
+      "reasoningTime": 24.45901925738513,
+      "inputTime": 1.773598647,
+      "answerTime": 6.114754814346282,
+      "activeParams": 41,
+      "passiveParams": 934
+    }
+  },
+  {
+    "id": "SRC-AA-0016",
+    "title": "K-EXAONE 2.0",
+    "url": "https://artificialanalysis.ai/models/k-exaone-2-0-0803",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "omniscienceIndex": -6.6,
+      "answer": 8943.824652774058,
+      "reasoning": 14867.593296911507,
+      "contextWindowTokens": 262144,
+      "activeParams": 37,
+      "passiveParams": 713
+    }
+  },
+  {
+    "id": "SRC-AA-0017",
+    "title": "Kimi K3 (max)",
+    "url": "https://artificialanalysis.ai/models/kimi-k3",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "artificialAnalysisIntelligenceIndex": 59.6994671342592,
+      "medianOutputSpeed": 38.603021497823,
+      "costPerIntelligenceIndexTask": 0.8374574917584584,
+      "intelligenceIndex": 59.6994671342592,
+      "mid": 1540.8,
+      "lower": 1530.92,
+      "upper": 1551.41,
+      "omniscienceIndex": 19.7,
+      "opennessIndex": 38.888888888888886,
+      "answer": 0.10173874668176706,
+      "reasoning": 0.2803763271863918,
+      "cacheWrite": 0.18427526141344,
+      "cacheHit": 0.25226618639395926,
+      "input": 0.018800970082900232,
+      "answerCost": 112.79754,
+      "reasoningCost": 1876.12107,
+      "cacheWriteCost": 164.94460262958896,
+      "cacheReadCost": 233.12359103704108,
+      "nonCacheInputCost": 38.124072,
+      "cacheHitPrice": 0.3,
+      "inputPrice": 3,
+      "outputPrice": 15,
+      "contextWindowTokens": 1048576,
+      "timePerTask": 10.39146398661382,
+      "reasoningTime": 51.809416009386446,
+      "inputTime": 2.893429405,
+      "answerTime": 12.952354002346611,
+      "activeParams": 104,
+      "passiveParams": 2696
+    }
+  },
+  {
+    "id": "SRC-AA-0018",
+    "title": "MiniMax-M3",
+    "url": "https://artificialanalysis.ai/models/minimax-m3",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "intelligenceIndex": 45.3968506399702,
+      "mid": 1106.54,
+      "lower": 1099.08,
+      "upper": 1115.74,
+      "omniscienceIndex": 1.35,
+      "opennessIndex": 33.333333333333336,
+      "answer": 0.015082309677922217,
+      "reasoning": 0.01523734514351011,
+      "cacheWrite": 0.02664081103009077,
+      "cacheHit": 0.07941250693225697,
+      "input": 0.0023367762351280442,
+      "answerCost": 14.5244532,
+      "reasoningCost": 92.4965844,
+      "cacheWriteCost": 23.20893895754297,
+      "cacheReadCost": 69.29320212679312,
+      "nonCacheInputCost": 5.2951602,
+      "cacheHitPrice": 0.06,
+      "inputPrice": 0.3,
+      "outputPrice": 1.2,
+      "contextWindowTokens": 1000000,
+      "outputSpeed": 105.258834767172,
+      "timePerTask": 3.8228327246907297,
+      "reasoningTime": 19.000780356574474,
+      "inputTime": 1.279715519,
+      "answerTime": 4.750195089143618,
+      "activeParams": 23,
+      "passiveParams": 405
+    }
+  },
+  {
+    "id": "SRC-AA-0019",
+    "title": "Mistral Medium 3.5",
+    "url": "https://artificialanalysis.ai/models/mistral-medium-3-5",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "mid": 516.65,
+      "lower": 506.51,
+      "upper": 525.98,
+      "opennessIndex": 33.333333333333336,
+      "answer": 0.057050443736432734,
+      "reasoning": 0.13753472496337538,
+      "cacheWrite": 0.16220329398792233,
+      "cacheHit": 0.09781466284641906,
+      "input": 0.009135315566180966,
+      "answerCost": 53.7423675,
+      "reasoningCost": 630.366795,
+      "cacheWriteCost": 113.73479823972116,
+      "cacheReadCost": 68.03130212602788,
+      "nonCacheInputCost": 17.458219500000002,
+      "cacheHitPrice": 0.15,
+      "inputPrice": 1.5,
+      "outputPrice": 7.5,
+      "outputSpeed": 153.937789183452,
+      "timePerTask": 2.7063018784489525,
+      "reasoningTime": 12.99226142332435,
+      "inputTime": 2.24922554350013,
+      "answerTime": 3.2480653558310877,
+      "activeParams": 128,
+      "passiveParams": 0
+    }
+  },
+  {
+    "id": "SRC-AA-0020",
+    "title": "Motif 3",
+    "url": "https://artificialanalysis.ai/models/motif-3",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "intelligenceIndex": 47.3602493365956,
+      "omniscienceIndex": 10.1833333333333,
+      "activeParams": 13.2,
+      "passiveParams": 300.8
+    }
+  },
+  {
+    "id": "SRC-AA-0021",
+    "title": "Muse Glimmer (high)",
+    "url": "https://artificialanalysis.ai/models/muse-glimmer",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "intelligenceIndex": 35.0641823105374,
+      "opennessIndex": 44.44444444444444,
+      "answer": 0.004679996187542616,
+      "reasoning": 0.011511414750110183,
+      "cacheWrite": 0.03600921385814192,
+      "cacheHit": 0.019027612705711967,
+      "input": 0.0019431390436540357,
+      "answerCost": 6.6937158,
+      "reasoningCost": 57.4421544,
+      "cacheWriteCost": 24.525429053136172,
+      "cacheReadCost": 12.793163814998625,
+      "nonCacheInputCost": 3.5728735249999994,
+      "cacheHitPrice": 0.04,
+      "inputPrice": 0.32499999999999996,
+      "outputPrice": 1.35,
+      "outputSpeed": 105.885004877681,
+      "timePerTask": 1.9016573277499276,
+      "reasoningTime": 18.88841580836127,
+      "inputTime": 0.909906227,
+      "answerTime": 4.722103952090317,
+      "activeParams": 30,
+      "passiveParams": 0
+    }
+  },
+  {
+    "id": "SRC-AA-0022",
+    "title": "Muse Spark 1.2 (xhigh)",
+    "url": "https://artificialanalysis.ai/models/muse-spark-1-2",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "artificialAnalysisIntelligenceIndex": 56.7615911905642,
+      "costPerIntelligenceIndexTask": 0.3992003044679802,
+      "intelligenceIndex": 56.7615911905642,
+      "mid": 1358.29,
+      "lower": 1346.81,
+      "upper": 1370.37,
+      "omniscienceIndex": 27.2,
+      "answer": 0.054712712758890385,
+      "reasoning": 0.0746155823924999,
+      "cacheWrite": 0.09855168215123924,
+      "cacheHit": 0.16335046786731278,
+      "input": 0.007969859298037904,
+      "answerCost": 63.6058655,
+      "reasoningCost": 339.822401,
+      "cacheWriteCost": 82.21099337500007,
+      "cacheReadCost": 136.853285595,
+      "nonCacheInputCost": 16.77997375,
+      "cacheHitPrice": 0.15,
+      "inputPrice": 1.25,
+      "outputPrice": 4.25,
+      "contextWindowTokens": 1048576
+    }
+  },
+  {
+    "id": "SRC-AA-0023",
+    "title": "Nemotron 3 Super",
+    "url": "https://artificialanalysis.ai/models/nvidia-nemotron-3-super-120b-a12b",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "mid": 0,
+      "lower": 0,
+      "upper": 0,
+      "opennessIndex": 83.33333333333333,
+      "answer": 0.006391501032792333,
+      "reasoning": 0.015393707118836667,
+      "cacheWrite": 0.20552411818950542,
+      "cacheHit": 0,
+      "input": 0.0012516371336909406,
+      "answerCost": 5.907153600000001,
+      "reasoningCost": 85.7271136,
+      "cacheWriteCost": 159.614313,
+      "cacheReadCost": 0,
+      "nonCacheInputCost": 2.401314,
+      "inputPrice": 0.2,
+      "outputPrice": 0.8,
+      "contextWindowTokens": 1000000,
+      "outputSpeed": 137.934030174248,
+      "timePerTask": 3.069362359642869,
+      "reasoningTime": 14.499685084771748,
+      "inputTime": 1.82851368199999,
+      "answerTime": 3.624921271192937,
+      "activeParams": 12.7,
+      "passiveParams": 107.89999999999999
+    }
+  },
+  {
+    "id": "SRC-AA-0024",
+    "title": "Nemotron 3 Ultra",
+    "url": "https://artificialanalysis.ai/models/nvidia-nemotron-3-ultra-550b-a55b",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "artificialAnalysisIntelligenceIndex": 38.3185469149774,
+      "medianOutputSpeed": 142.288652600514,
+      "costPerIntelligenceIndexTask": 0.38266237297499145,
+      "intelligenceIndex": 38.3185469149774,
+      "mid": 873.43,
+      "lower": 865.24,
+      "upper": 882.06,
+      "omniscienceIndex": -0.4,
+      "opennessIndex": 83.33333333333333,
+      "answer": 0.023760305215722605,
+      "reasoning": 0.04132609995637795,
+      "cacheWrite": 0.3134186748114107,
+      "cacheHit": 0,
+      "input": 0.00415729299148015,
+      "answerCost": 34.53911725,
+      "reasoningCost": 261.9805595,
+      "cacheWriteCost": 229.6675998,
+      "cacheReadCost": 0,
+      "nonCacheInputCost": 7.9923155999999995,
+      "cacheHitPrice": 0.2,
+      "inputPrice": 0.6,
+      "outputPrice": 2.75,
+      "outputSpeed": 142.288652600514,
+      "timePerTask": 2.6499373910949022,
+      "reasoningTime": 15.988625645273569,
+      "inputTime": 1.8594446495,
+      "answerTime": 3.5139836583018833,
+      "activeParams": 55,
+      "passiveParams": 495
+    }
+  },
+  {
+    "id": "SRC-AA-0025",
+    "title": "Nemotron 3.5 Lightning",
+    "url": "https://artificialanalysis.ai/models/nemotron-3-5-lightning",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "answer": 0.002703661139445904,
+      "reasoning": 0.003477131281575894,
+      "cacheWrite": 0.055473724790102465,
+      "cacheHit": 0,
+      "input": 0.00035913609752507734,
+      "answerCost": 3.2042278000000004,
+      "reasoningCost": 17.6074734,
+      "cacheWriteCost": 38.19621795,
+      "cacheReadCost": 0,
+      "nonCacheInputCost": 0.6980548500000001,
+      "cacheHitPrice": 0.05,
+      "inputPrice": 0.05,
+      "outputPrice": 0.2,
+      "contextWindowTokens": 1000000,
+      "outputSpeed": 300.392288061754,
+      "timePerTask": 1.522719464852344,
+      "reasoningTime": 6.657960538550324,
+      "inputTime": 1.07197213899997,
+      "answerTime": 1.664490134637581,
+      "activeParams": 3.6,
+      "passiveParams": 28
+    }
+  },
+  {
+    "id": "SRC-AA-0026",
+    "title": "Qwen3.8 Max",
+    "url": "https://artificialanalysis.ai/models/qwen3-8-max",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "intelligenceIndex": 58.0774404479668,
+      "mid": 1420.1,
+      "lower": 1408.64,
+      "upper": 1431.73,
+      "omniscienceIndex": 3.4,
+      "answer": 0.06619960974701053,
+      "reasoning": 0.16352492921804482,
+      "cacheWrite": 0.5408909138592883,
+      "cacheHit": 0.34726558924778655,
+      "input": 0.014156865817635374,
+      "answerCost": 84.32647800000001,
+      "reasoningCost": 787.792794,
+      "cacheWriteCost": 508.91811828600015,
+      "cacheReadCost": 332.40438796424996,
+      "nonCacheInputCost": 27.970802,
+      "cacheHitPrice": 0.25,
+      "inputPrice": 2,
+      "outputPrice": 6,
+      "contextWindowTokens": 1000000,
+      "outputSpeed": 46.2222791144524,
+      "reasoningTime": 43.269177511730625,
+      "inputTime": 2.66557972300006,
+      "answerTime": 10.817294377932656
+    }
+  },
+  {
+    "id": "SRC-AA-0027",
+    "title": "Solar Open2 250B",
+    "url": "https://artificialanalysis.ai/models/solar-open2-250b",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "intelligenceIndex": 37.4265535921632,
+      "omniscienceIndex": -1.76666666666667,
+      "contextWindowTokens": 1048576,
+      "activeParams": 250,
+      "passiveParams": 0
+    }
+  },
+  {
+    "id": "SRC-AA-0028",
+    "title": "gpt-oss-120b (high)",
+    "url": "https://artificialanalysis.ai/models/gpt-oss-120b",
+    "type": "benchmark",
+    "language": "en",
+    "publisher": "Artificial Analysis",
+    "domains": [
+      "LLM/评测/模型数据"
+    ],
+    "target_terms": [
+      "模型数据总览",
+      "模型评测"
+    ],
+    "angle": "独立第三方 AI 模型横评:智能指数/价格/速度/上下文/开放度",
+    "quality": "A",
+    "status": "proposed",
+    "tier": "A",
+    "collected": "2026-08-17",
+    "data": {
+      "mid": 7.8,
+      "lower": 0,
+      "upper": 20.53,
+      "opennessIndex": 38.888888888888886,
+      "answer": 0.004614379466318555,
+      "reasoning": 0.01751684673560642,
+      "cacheWrite": 0.049655429814875265,
+      "cacheHit": 0,
+      "input": 0.0009387369979338733,
+      "answerCost": 3.9491442,
+      "reasoningCost": 48.854217600000005,
+      "cacheWriteCost": 40.43652735,
+      "cacheReadCost": 0,
+      "nonCacheInputCost": 1.8105514499999997,
+      "cacheHitPrice": 0.15,
+      "inputPrice": 0.15,
+      "outputPrice": 0.6,
+      "outputSpeed": 178.702916985442,
+      "timePerTask": 3.2927002953916955,
+      "reasoningTime": 11.191759114726313,
+      "inputTime": 0.818194016999996,
+      "answerTime": 2.7979397786815783,
+      "activeParams": 5.1,
+      "passiveParams": 111.9
+    }
+  }
+]
+```
