@@ -1,8 +1,8 @@
 # AIGC 术语知识库 — MkDocs 配置
-site_name: AIGC 术语知识库
-site_description: 一线知识的沉淀与导航站 — 开源、Wiki 式、面向大众的 AIGC 术语库
-site_url: https://texxxxture.github.io/AIGC-Terminology-Wiki/
-repo_url: https://github.com/TEXXXXTURE/AIGC-Terminology-Wiki
+site_name: AI 知识库
+site_description: 一线知识的沉淀与导航站 — 开源、Wiki 式、面向所有人的知识库
+site_url: https://texxxxture.github.io/ai-knowledge-base/
+repo_url: https://github.com/TEXXXXTURE/ai-knowledge-base
 repo_name: GitHub
 edit_uri: edit/main/docs/
 
@@ -69,7 +69,7 @@ extra:
   generator: false
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/TEXXXXTURE/AIGC-Terminology-Wiki
+      link: https://github.com/TEXXXXTURE/ai-knowledge-base
 
 nav:
   - 首页: index.md
