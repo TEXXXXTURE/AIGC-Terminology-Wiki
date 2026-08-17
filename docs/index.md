@@ -60,4 +60,4 @@ AI 知识树
 
 ## ✍️ 贡献
 
-欢迎任何人参与！提 Issue 纠错、提 PR 写词条。仓库：[TEXXXXTURE/AIGC-Terminology-Wiki](https://github.com/TEXXXXTURE/AIGC-Terminology-Wiki)（历史命名，已扩展为通用知识库）
+欢迎任何人参与！提 Issue 纠错、提 PR 写词条。仓库：[TEXXXXTURE/ai-knowledge-base](https://github.com/TEXXXXTURE/ai-knowledge-base)

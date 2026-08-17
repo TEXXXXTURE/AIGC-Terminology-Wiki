@@ -1,4 +1,4 @@
-# AIGC 术语知识库 — MkDocs 配置
+# AI 知识库 — MkDocs 配置
 site_name: AI 知识库
 site_description: 一线知识的沉淀与导航站 — 开源、Wiki 式、面向所有人的知识库
 site_url: https://texxxxture.github.io/ai-knowledge-base/
@@ -156,6 +156,13 @@ nav:
       - KS: 词条/03-表层概念/工具/KS.md
       - KSampler: 词条/03-表层概念/工具/KSampler.md
       - Ollama: 词条/03-表层概念/工具/Ollama.md
+  - 文章与引用:
+    - 索引: 文章与引用/index.md
+    - 聚合:
+      - 2026-08-10 MOKE 日报: 文章与引用/聚合/2026-08-10-MOKE日报.md
+    - 引用库:
+      - 论文: 文章与引用/引用库/论文.md
+      - 文章: 文章与引用/引用库/文章.md
   - LLM 与语言模型:
     - 基础概念:
       - KV Cache: 词条/03-表层概念/LLM/KV Cache.md
