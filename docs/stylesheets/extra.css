@@ -1,7 +1,7 @@
 /* ========== AI 知识库 — 克制编辑风 × 终端点缀 ========== */
-/* 品牌色: 主橙 #FF9D0B / 终端绿 #21de75 / 深底 #0e0e12
+/* 品牌色: 主橙 #10B981 / 终端绿 #34D399 / 深底 #0e0e12
    设计原则(taste-skill):
-   - 颜色 = 注意力, 不是装饰(橙色只用于链接/关键元素)
+   - 单 accent 色(饱和度 < 80%), 颜色 = 注意力, 不是装饰
    - 标题纯色大字号, 不用渐变
    - 内容优先, 疏朗排版, 信息密度适中
    - 终端风点缀: Mono 元信息 + tree 知识树 + 路径符 */
@@ -9,30 +9,30 @@
 /* ---------- 全局变量: 深色/亮色双模式 ---------- */
 [data-md-color-scheme="slate"] {
   --md-default-bg-color: transparent;
-  --md-primary-fg-color: #FF9D0B;
-  --md-primary-fg-color--light: #FFB74D;
-  --md-primary-fg-color--dark: #D97B00;
-  --md-accent-fg-color: #21de75;            /* 强调色: 终端绿(与橙品牌双色) */
-  --md-accent-fg-color--transparent: rgba(33,222,117,.12);
-  --md-typeset-a-color: #FFB74D;
+  --md-primary-fg-color: #10B981;
+  --md-primary-fg-color--light: #34D399;
+  --md-primary-fg-color--dark: #047857;
+  --md-accent-fg-color: #34D399;            /* 强调色: 终端绿(与橙品牌双色) */
+  --md-accent-fg-color--transparent: rgba(52,211,153,.12);
+  --md-typeset-a-color: #34D399;
   --md-typeset-a-color--hover: #fff;
   --md-typeset-color: #c9c7d1;
 }
 
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color: #FF8D00;
-  --md-primary-fg-color--light: #FFB74D;
-  --md-primary-fg-color--dark: #D97B00;
-  --md-accent-fg-color: #12805c;
+  --md-primary-fg-color: #10B981;
+  --md-primary-fg-color--light: #34D399;
+  --md-primary-fg-color--dark: #047857;
+  --md-accent-fg-color: #047857;
   --md-accent-fg-color--transparent: rgba(18,128,92,.10);
-  --md-typeset-a-color: #D97B00;
-  --md-typeset-a-color--hover: #12805c;
+  --md-typeset-a-color: #047857;
+  --md-typeset-a-color--hover: #047857;
 }
 
 /* ---------- 深色背景: 星空底(保留, 去玻璃) ---------- */
 [data-md-color-scheme="slate"] .md-main {
   background:
-    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255,157,11,.07), transparent 60%),
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(16,185,129,.07), transparent 60%),
     linear-gradient(180deg, #101014 0%, #0e0e12 50%, #101014 100%);
   background-attachment: fixed;
 }
@@ -97,9 +97,9 @@
 
 /* ---------- 链接: 橙 + 下划线, 悬停白(去粉色炫技) ---------- */
 [data-md-color-scheme="slate"] .md-content__inner a {
-  color: #FFB74D;
+  color: #34D399;
   text-decoration: none;
-  border-bottom: 1px solid rgba(255,157,11,.35);
+  border-bottom: 1px solid rgba(16,185,129,.35);
   transition: color .15s, border-color .15s;
 }
 [data-md-color-scheme="slate"] .md-content__inner a:hover {
@@ -107,22 +107,22 @@
   border-bottom-color: #fff;
 }
 [data-md-color-scheme="default"] .md-content__inner a:hover {
-  color: #12805c;
-  border-bottom-color: #12805c;
+  color: #047857;
+  border-bottom-color: #047857;
 }
 
 /* ---------- 代码块: 终端绿边框点缀 ---------- */
 [data-md-color-scheme="slate"] .md-content__inner pre,
 [data-md-color-scheme="slate"] .md-content__inner code.highlight {
   background: #0b0b0f !important;
-  border: 1px solid rgba(33,222,117,.15);
+  border: 1px solid rgba(52,211,153,.15);
   border-radius: 8px;
   font-family: "JetBrains Mono", "Cascadia Code", ui-monospace, monospace;
   font-size: .83rem;
 }
 [data-md-color-scheme="slate"] .md-content__inner code:not(.highlight) {
-  background: rgba(33,222,117,.1);
-  color: #7ae8a8;
+  background: rgba(52,211,153,.1);
+  color: #6EE7B7;
   border-radius: 4px;
   font-family: "JetBrains Mono", ui-monospace, monospace;
   font-size: .85em;
@@ -134,9 +134,9 @@
   font-size: .85rem;
 }
 [data-md-color-scheme="slate"] .md-content__inner th {
-  color: #FFB74D;
+  color: #34D399;
   font-weight: 600;
-  border-bottom: 1px solid rgba(255,157,11,.3);
+  border-bottom: 1px solid rgba(16,185,129,.3);
 }
 [data-md-color-scheme="slate"] .md-content__inner td {
   border-bottom: 1px solid rgba(255,255,255,.06);
@@ -146,7 +146,7 @@
 [data-md-color-scheme="slate"] .md-header {
   background: rgba(14,14,18,.8) !important;
   backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(255,157,11,.12);
+  border-bottom: 1px solid rgba(16,185,129,.12);
 }
 [data-md-color-scheme="slate"] .md-header__title {
   font-weight: 700;
@@ -154,11 +154,11 @@
 
 /* ---------- 侧边栏: 激活态橙, 层级 Mono 点缀 ---------- */
 [data-md-color-scheme="slate"] .md-nav__link--active {
-  color: #FF9D0B !important;
+  color: #10B981 !important;
   font-weight: 600;
 }
 [data-md-color-scheme="slate"] .md-nav__item--active > .md-nav__link {
-  color: #FFD21E !important;
+  color: #6EE7B7 !important;
 }
 [data-md-color-scheme="slate"] .md-nav__link {
   font-size: .82rem;
@@ -174,17 +174,17 @@
 /* ---------- 滚动条: 收敛(橙只留细条) ---------- */
 [data-md-color-scheme="slate"] ::-webkit-scrollbar { width: 7px; height: 7px; }
 [data-md-color-scheme="slate"] ::-webkit-scrollbar-thumb {
-  background: rgba(255,157,11,.2);
+  background: rgba(16,185,129,.2);
   border-radius: 4px;
 }
-[data-md-color-scheme="slate"] ::-webkit-scrollbar-thumb:hover { background: rgba(255,157,11,.4); }
+[data-md-color-scheme="slate"] ::-webkit-scrollbar-thumb:hover { background: rgba(16,185,129,.4); }
 
 /* ---------- 选中文字: 橙(保留, 收敛) ---------- */
-[data-md-color-scheme="slate"] ::selection { background: rgba(255,157,11,.3); color: #fff; }
+[data-md-color-scheme="slate"] ::selection { background: rgba(16,185,129,.3); color: #fff; }
 
 /* ---------- 焦点: 橙描边(可访问性) ---------- */
 [data-md-color-scheme="slate"] :focus-visible {
-  outline: 2px solid #FF9D0B;
+  outline: 2px solid #10B981;
   outline-offset: 2px;
 }
 
@@ -221,11 +221,11 @@
   margin: 1.2rem 0 0;
 }
 [data-md-color-scheme="default"] .hero .prompt { color: rgba(0,0,0,.4); }
-.hero .prompt .path { color: #21de75; }
+.hero .prompt .path { color: #34D399; }
 .hero .prompt .cursor {
   display: inline-block;
   width: 7px; height: 14px;
-  background: #21de75;
+  background: #34D399;
   animation: blink 1.1s infinite;
   vertical-align: middle;
 }
@@ -252,14 +252,14 @@
 [data-md-color-scheme="default"] .kb-tree .dir { color: #1a1a20; }
 .kb-tree .cnt { color: rgba(255,255,255,.3); }
 [data-md-color-scheme="default"] .kb-tree .cnt { color: rgba(0,0,0,.3); }
-.kb-tree .hl { color: #FF9D0B; }
+.kb-tree .hl { color: #10B981; }
 
 /* ---------- 首页导航卡片网格(信息优先) ---------- */
 .kb-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.07); border-radius: 10px; overflow: hidden; margin: 1.5rem 0 2.5rem; }
 [data-md-color-scheme="default"] .kb-nav { background: rgba(0,0,0,.08); border-color: rgba(0,0,0,.1); }
 .kb-nav a { display: block; background: #0e0e12; padding: 1.1rem 1.3rem; text-decoration: none !important; border-bottom: none !important; transition: background .15s; }
 [data-md-color-scheme="default"] .kb-nav a { background: #fff; }
-.kb-nav a:hover { background: rgba(255,157,11,.06); }
+.kb-nav a:hover { background: rgba(16,185,129,.06); }
 .kb-nav .n-title { font-size: .95rem; font-weight: 700; color: #f2f0f6; display: flex; justify-content: space-between; align-items: baseline; }
 [data-md-color-scheme="default"] .kb-nav .n-title { color: #1a1a20; }
 .kb-nav .n-title .n-cnt { font-family: ui-monospace, monospace; font-size: .7rem; color: rgba(255,255,255,.3); font-weight: 400; }
@@ -277,15 +277,15 @@
   border-bottom: 1px solid rgba(255,255,255,.06);
 }
 [data-md-color-scheme="default"] .term-meta { color: rgba(0,0,0,.4); border-bottom-color: rgba(0,0,0,.08); }
-.term-meta .k { color: #21de75; }
-[data-md-color-scheme="default"] .term-meta .k { color: #12805c; }
+.term-meta .k { color: #34D399; }
+[data-md-color-scheme="default"] .term-meta .k { color: #047857; }
 
 /* ---------- 文章与引用: 引用条目 ---------- */
 .cite-block {
-  border-left: 2px solid #FF9D0B;
+  border-left: 2px solid #10B981;
   padding: .6rem 1rem;
   margin: .8rem 0;
-  background: rgba(255,157,11,.04);
+  background: rgba(16,185,129,.04);
   border-radius: 0 8px 8px 0;
 }
 

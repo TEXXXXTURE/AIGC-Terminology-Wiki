@@ -55,11 +55,11 @@ title: AI 知识库
   </a>
 </div>
 
-## 🟡 前沿雷达
+## 前沿雷达
 
 机器自动扫描社区（GitHub / arXiv / 讨论）生成的热词卡，未经沉淀、先看先得。见 `雷达/` 目录。
 
-## 📖 项目文档
+## 项目文档
 
 | 文档 | 是什么 |
 |------|--------|
@@ -71,6 +71,6 @@ title: AI 知识库
 | [维护流程](项目文档/MAINTENANCE.md) | 审校 / 发布 / 雷达 / 升降级 / 回滚 |
 | [设计定案](项目文档/DESIGN-SPEC.md) | 项目设计决策的唯一事实源 |
 
-## ✍️ 贡献
+## 贡献
 
 欢迎任何人参与！提 Issue 纠错、提 PR 写词条。仓库：[TEXXXXTURE/ai-knowledge-base](https://github.com/TEXXXXTURE/ai-knowledge-base)

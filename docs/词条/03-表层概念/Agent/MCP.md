@@ -29,7 +29,7 @@ revisions: 1
 
 ## 定义
 
-🟡 社区热词，未经沉淀，信息可能快速过时
+[热词] 社区热词，未经沉淀，信息可能快速过时
 
 MCP（Model Context Protocol，模型上下文协议）是 Anthropic 于 2024 年底推出的开放协议，目标是统一「AI 应用怎么连接外部数据和工具」。在 MCP 之前，每接一个数据源或工具都要写一套定制对接代码；MCP 把这个接口标准化，就像「AI 界的 USB-C」——工具提供方写一个 MCP 服务器，任何支持 MCP 的客户端（Claude Desktop、Cursor、各类 IDE 和 Agent 框架）都能即插即用。
 

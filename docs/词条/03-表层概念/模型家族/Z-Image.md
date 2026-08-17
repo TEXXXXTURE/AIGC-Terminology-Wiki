@@ -42,7 +42,7 @@ Z-Image 基于 Lumina2 架构（DiT 的变体），核心创新是**极致的蒸
 在 ComfyUI 里，Z-Image-Turbo 是你的日常主力：
 - 加载 `z_image_turbo_bf16` + `qwen_3_4b_fp8_mixed`（注意：虽然名字带 qwen，实际工作流用的是 Gemma2 2560 维编码器）+ `ae` VAE
 - 参数：euler + simple + **4 步**（这是 Turbo 的标配，别用默认 20 步）
-- ⚠️ 你的 RDNA2 卡：只能用 bf16 原版（int8_convrot 版必崩）
+- [注意] 你的 RDNA2 卡：只能用 bf16 原版（int8_convrot 版必崩）
 
 ## 争议 / 讨论
 

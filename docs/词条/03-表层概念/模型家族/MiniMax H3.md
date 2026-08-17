@@ -41,7 +41,7 @@ MiniMax 在 2025 年发布 H3，一举奠定国产开源视频模型的高端地
 
 在 ComfyUI 里，H3 的完整阵容是「主模型 + 32B 编码器 + 视频 VAE + 音频 VAE」四件套：
 - **显存**：bf16 全套约 85GB 文件，12GB 显卡靠 UniBlockSwap 换显存能跑但慢；更推荐社区 GGUF 量化版（Q4_K_M ≈20GB 主模型）
-- **⚠️ RDNA2 注意**：官方 int8_convrot 量化版在你的 RX 6750 XT 上必崩（无 WMMA），只能选 bf16/fp16 原版或 GGUF
+- **[注意] RDNA2 注意**：官方 int8_convrot 量化版在你的 RX 6750 XT 上必崩（无 WMMA），只能选 bf16/fp16 原版或 GGUF
 - 加速：挂 H3-Turbo LoRA 可显著减少步数
 
 ## 争议 / 讨论
