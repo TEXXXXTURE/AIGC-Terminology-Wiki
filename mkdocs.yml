@@ -65,6 +65,9 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 
+hooks:
+  - scripts/term_meta_hook.py
+
 extra:
   generator: false
   social:

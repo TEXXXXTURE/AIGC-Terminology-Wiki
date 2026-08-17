@@ -4,44 +4,56 @@ title: AI 知识库
 
 <div class="hero">
   <h1>AI 知识库</h1>
-  <div class="subtitle">一线知识的沉淀与导航站 — 开源、Wiki 式、面向所有人的知识库</div>
-  <div class="pillars">
-    <span class="pillar">📚 上限靠来源</span>
-    <span class="pillar">🧪 标准靠校验</span>
-    <span class="pillar">🤗 生态靠开放</span>
-    <span class="pillar">🔖 信任靠留痕</span>
-  </div>
+  <div class="subtitle">一线知识的沉淀与导航站。每个词条是一个节点，关系是边——从根往下读是一条完整学习路径，从叶子跳入是速查。</div>
+  <div class="prompt"><span class="path">ai-kb@latest:~$</span> tree --depth=1 --style=wiki<span class="cursor"></span></div>
 </div>
 
----
+<div class="kb-tree">
+<span class="dir">├─ AI 基础</span>          <span class="cnt">(12)</span> 机器学习 · 深度学习 · 数学与统计<br>
+<span class="dir">├─ 组件</span>              <span class="cnt">(08)</span> CLIP · Tokenizer · UNet · VAE<br>
+<span class="dir">├─ 生成与多模态</span>      <span class="cnt">(27)</span> <span class="hl">量化格式 · 微调 · 加速 · 对齐 · 厂商 · 家族</span><br>
+<span class="dir">├─ LLM 与语言模型</span>    <span class="cnt">(12)</span> 推理引擎 · RAG · 提示词 · 评测<br>
+<span class="dir">├─ Agent 与智能体</span>    <span class="cnt">(09)</span> 框架 · ReAct · 多 Agent 协作<br>
+<span class="dir">├─ 文章与引用</span>        <span class="cnt">(01)</span> 每日 AI 阅读索引<br>
+<span class="dir">└─ 计算机基础</span>        <span class="cnt">(28)</span> 语言 · 系统 · 基础设施 · 框架
+</div>
 
-## 🌳 知识树
+## 栏目导航
 
-每个词条是一个节点，关系是边。从根往下读是一条完整的学习路径，从叶子跳入是速查。
-
-```
-AI 知识树
-├── AI 基础          — AI 是什么、机器学习/深度学习基础、数学与统计
-├── 深度学习          — 神经网络/Transformer/CNN/训练与微调
-├── 生成与多模态       — 扩散模型/Stable Diffusion/ComfyUI/图像视频音频生成
-├── LLM 与语言模型    — LLM 工程/RAG/提示词/评测/微调
-├── Agent 与智能体    — Agent/Function Calling/MCP/多Agent协作
-├── AI 工程与基础设施  — 推理引擎/MLOps/数据工程/部署
-└── 计算机基础        — 编程语言/操作系统/数据库/框架与库
-```
-
-> 说明：Wiki 的知识结构是网状的——每个词条是独立节点，通过 relations 互相连接。当前仓库物理目录沿用早期分类（01-底层原理 … 06-IT行业），这只是文件夹层面的便利，知识结构在 relations 里。详细地图见 [AI 知识地图](项目文档/map.md)。
-
-## 📚 词条导航
-
-- [文章与引用 →](文章与引用/index.md) — 每日 AI 资讯聚合与阅读索引（第一批已收录）
-- [AI 知识地图 →](项目文档/map.md) — 全站网状入口
-- [底层原理 →](词条/01-底层原理/神经网络.md) — 理解一切的根
-- [组件 →](词条/02-组件/UNet.md) — 模型的零件
-- [表层概念 →](词条/03-表层概念/量化格式/bf16.md) — 具体技术/格式/参数
-- [LLM 工程 →](词条/04-LLM工程/推理引擎.md) — LLM 落地
-- [Agent 工程 →](词条/05-Agent工程/Agent 框架.md) — Agent 开发
-- [IT 行业 →](词条/06-IT行业/编程语言/Python.md) — 语言/系统/框架
+<div class="kb-nav">
+  <a href="文章与引用/index.md">
+    <span class="n-title">文章与引用 <span class="n-cnt">NEW</span></span>
+    <span class="n-desc">每日 AI 资讯聚合与阅读索引——聚合摘要 + 判断线索，不写原文</span>
+  </a>
+  <a href="项目文档/map.md">
+    <span class="n-title">AI 知识地图 <span class="n-cnt">map</span></span>
+    <span class="n-desc">全站网状入口：广义 AI 知识树 + 当前目录对应</span>
+  </a>
+  <a href="词条/01-底层原理/神经网络.md">
+    <span class="n-title">底层原理 <span class="n-cnt">01</span></span>
+    <span class="n-desc">理解一切的根：神经网络 / Transformer / 扩散模型 / 量化</span>
+  </a>
+  <a href="词条/02-组件/UNet.md">
+    <span class="n-title">组件 <span class="n-cnt">02</span></span>
+    <span class="n-desc">模型的零件：CLIP / Tokenizer / VAE / 采样器</span>
+  </a>
+  <a href="词条/04-LLM工程/推理引擎.md">
+    <span class="n-title">LLM 工程 <span class="n-cnt">04</span></span>
+    <span class="n-desc">LLM 落地：推理引擎 / RAG / 提示词 / 模型评测</span>
+  </a>
+  <a href="词条/05-Agent工程/Agent 框架.md">
+    <span class="n-title">Agent 工程 <span class="n-cnt">05</span></span>
+    <span class="n-desc">智能体开发：框架 / 工具调用 / MCP / 多 Agent 协作</span>
+  </a>
+  <a href="词条/06-IT行业/编程语言/Python.md">
+    <span class="n-title">IT 行业 <span class="n-cnt">06</span></span>
+    <span class="n-desc">编程语言 / 操作系统 / 基础设施 / 框架与库</span>
+  </a>
+  <a href="词条/04-LLM工程/模型数据总览.md">
+    <span class="n-title">模型数据总览 <span class="n-cnt">data</span></span>
+    <span class="n-desc">28 模型 × 7 维度：智能指数 / 价格 / 速度 / 上下文 / 开放度</span>
+  </a>
+</div>
 
 ## 🟡 前沿雷达
 
