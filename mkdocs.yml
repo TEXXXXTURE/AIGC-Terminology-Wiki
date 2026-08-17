@@ -10,20 +10,20 @@ theme:
   name: material
   language: zh
   palette:
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: orange
-      accent: pink
-      toggle:
-        icon: material/weather-night
-        name: 切换到亮色
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: orange
-      accent: pink
+      primary: black
+      accent: black
       toggle:
         icon: material/weather-sunny
         name: 切换到暗色
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: white
+      accent: white
+      toggle:
+        icon: material/weather-night
+        name: 切换到亮色
   features:
     - navigation.tracking
     - navigation.top
