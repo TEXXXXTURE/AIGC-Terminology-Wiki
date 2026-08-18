@@ -20,13 +20,31 @@
 - **概念库（docs/）**：沉淀层。成熟词条独立成页，分类索引，互相链接。
 - **雷达（雷达/）**：社区感知层。自动扫描 GitHub/arXiv/推文 抓新概念，生成「🟡 社区热词卡」——未经沉淀的一线信息，先进来、标注清楚、再慢慢转正。
 
+## 目录结构
+
+```
+├── docs/                  概念库（MkDocs 站点）
+│   ├── 词条/             词条本体，按领域分 6 大类
+│   │   ├── 01-底层原理    Transformer/MoE/量化/训练...
+│   │   ├── 02-组件        CLIP/VAE/Tokenizer...
+│   │   ├── 03-表层概念    Agent/LLM/多模态/模型厂商...
+│   │   ├── 04-LLM工程     推理优化/RAG/评测...
+│   │   ├── 05-Agent工程   Agent 框架/工具调用/记忆...
+│   │   └── 06-IT行业      基础设施/语言/框架...
+│   ├── 文章与引用/        外部文章聚合与引用库
+│   └── 项目文档/          项目规范（PRD/SPEC）+ 生产流程（词条生产单/kimi-prompts）
+├── 雷达/                 社区感知层（采集原始素材 → 采集表 → 热词卡）
+├── scripts/              采集与维护脚本（moke_collect/aa_collect/community_collect...）
+├── mkdocs.yml            MkDocs 站点配置
+```
+
 ## 内容规范
 
-所有词条必须符合 [CONTENT-SPEC.md](CONTENT-SPEC.md)（词条 Schema + 写作风格 + 成熟度分级 + 校验清单）。
+所有词条必须符合 [CONTENT-SPEC.md](docs/项目文档/CONTENT-SPEC.md)（词条 Schema + 写作风格 + 成熟度分级 + 校验清单）。
 
 ## 怎么贡献
 
-欢迎任何人参与！详见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+欢迎任何人参与！详见 [CONTRIBUTING.md](docs/项目文档/CONTRIBUTING.md)。
 
 四层贡献模型：
 - **L1 读者**：提 Issue（纠错 / 补充 / 讨论）
@@ -36,12 +54,9 @@
 
 ## 站点
 
-GitHub Pages 自动部署：https://texxxxture.github.io/AIGC-Terminology-Wiki/
+GitHub Pages 自动部署：https://texxxxture.github.io/ai-knowledge-base/
 
-## 维护
+## 关联项目
 
-审校 / 发布 / 雷达 / 升降级 / 回滚流程见 [MAINTENANCE.md](MAINTENANCE.md)。
-
-## License
-
-MIT
+- [工具情报官 Wiki](https://github.com/TEXXXXTURE/tool-intel-wiki) — 工具拆解与情报日报
+- [分布式 Agent 集群规则](https://github.com/TEXXXXTURE/distributed-agent-cluster-rules) — 集群运行规则
